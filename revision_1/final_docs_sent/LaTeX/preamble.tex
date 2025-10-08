@@ -1,0 +1,292 @@
+%IDIOMAS:
+\usepackage[spanish,english]{babel} %Poner es-tabla para que ponga los caption en español. El último idioma que se cargue es el que se queda por defecto. Luego en el texto se puede cambiar con \selectlanguage{idioma}.
+\usepackage[utf8]{inputenc}	%Para los acentos
+
+%PARA ESCRIBIR EN COLOR:
+\usepackage{color}	%Para escribir en color con el comando \textcolor{color}{texto}
+\usepackage[dvipsnames]{xcolor} %Paquete con colores predefinidos extra
+
+%PARA USAR TIPOGRAFÍA DE CONJUNTOS
+\usepackage{amssymb}
+
+%PARA CAMBIAR EL TIPO DE FUENTE (LETRA):
+%Por defecto tenemos Computer Modern (no es necesario cargar ningun paquete), pero podemos seleccionar otro tipo de letra.
+%Cargamos un paquete para cada tipo de letra:
+%\usepackage{times} %fontcode ptm
+%\usepackage{palatino} %fontcode ppl
+%\usepackage{bookman} %fontcode pbk
+%\usepackage{helvet} %fontcode phv
+\usepackage{courier} %fontcode pcr
+%Tras cargar el paquete, podemos cambiar la letra haciendo: {\fontfamily{fontcode}\selectfont  texto}
+
+%PARA DIVIDIR EL TEXTO EN COLUMNAS:
+\usepackage{multicol}		%Para dividir el texto en columnas con \begin{multicols}{nº de columnas\end{multicols}
+\setlength{\columnsep}{0.5cm} %Para elegir la separación entre las columnas.
+
+%INDENTADO Y MÁRGENES:
+%Para el indentado (sangría de los párrafos).
+\usepackage{indentfirst}	%Para que indente el primer párrafo tras un título de sección.
+\setlength{\parindent}{0.5cm}	%Tamaño de la sangría.
+%Para eliminar la sangría de un párrafo hacemos: {\setlength{\parindent}{0pt} texto del párrafo}
+
+%Para los márgenes:
+\usepackage{anysize}	
+%\marginsize{3cm}{3cm}{1.5cm}{1.5cm}	%Indicamos los márgenes {izquierda}{derecha}{arriba}{abajo}
+%\usepackage[top=0cm, bottom=1.5cm, inner=2cm, outer=2cm, headheight=3cm, includeheadfoot]{geometry} %Indicamos los márgenes para encuadernación.
+\usepackage[top=1.5cm, bottom=3cm, inner=2cm, outer=2cm]{geometry} %Indicamos los márgenes para encuadernación.
+
+
+%GRÁFICOS (PAQUETES PARA INTRODUCIR IMÁGENES):
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.mps,.gif,.bmp,.eps}
+\usepackage{glossaries}
+\usepackage{tikz}
+\let\ig\includegraphics 
+
+%Uso de flotantes en imágenes y tablas:
+\usepackage{float}
+\usepackage{subfig}
+
+%Para modificar los captions de imágenes y tablas:
+\usepackage[margin=0cm,font=footnotesize]{caption} 
+
+%Para el uso de psfrag:
+\usepackage{psfrag}
+\usepackage{pstool}
+\usepackage{epsfig}
+\usepackage{graphics}
+
+%Para incluir figuras mezcladas (en paralelo) con el texto:
+\usepackage{wrapfig}
+
+%Paquetes para tikz
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+% \usetikzlibrary{arrows}
+% \usetikzlibrary{angles,calc,intersections,quotes,arrows.meta}
+% \usetikzlibrary{arrows.new}
+\newcommand{\degre}{\ensuremath{^\circ}}
+
+%ENCABEZADOS Y PIES DE PÁGINA:
+\usepackage{fancyhdr}
+%\pagestyle{fancyplain}
+%\headheight=60pt %para cambiar el tamaño del encabezado
+%\lhead{\includegraphics[width=0.08\textwidth]{MARCA_UMA.png}}
+%\chead{ANTEPROYECTO \\}
+%\rhead{\includegraphics[width=0.2\textwidth]{logo_etsii.jpg}}
+%\renewcommand{\headrulewidth}{1.5pt} % grosor de la línea de la cabecera
+%\renewcommand{\footrulewidth}{1.5pt} % grosor de la línea del pie de página
+
+%Explicación:
+%\comando[pagina par]{pagina impar}
+%Nota: para incluir una imagen en el encabezado o pie de página, en caso de incluirla dentro de los corchetes [], es necesario meter el comando \includegraphics[opciones]{figura} entre corchetes {}.
+
+%Encabezados:
+\pagestyle{fancyplain}
+%\lhead[\thepage]{Documento de tipo {\em article}}
+%\chead[]{}
+%\rhead[Manual básico de \LaTeX]{\thepage}
+%\renewcommand{\headrulewidth}{0pt}
+
+%Ejemplo encabezado con figuras:
+\pagestyle{fancyplain}
+\lhead[]{}
+\chead[]{}
+\rhead[]{}
+\renewcommand{\headrulewidth}{0pt}
+%\lhead[{\includegraphics[width=0.1\textwidth]{logo_uc3m.eps}}]{\includegraphics[width=0.1\textwidth]{logo_uc3m.eps}}
+%\chead[]{}
+%\rhead[{\includegraphics[width=0.3\textwidth]{logo_nanotec.eps}}]{\includegraphics[width=0.3\textwidth]{logo_nanotec.eps}}
+%\renewcommand{\headrulewidth}{1pt}
+
+%Pie de pagina:
+\lfoot[\thepage]{}
+\cfoot[]{}
+\rfoot[]{\thepage}
+\renewcommand{\footrulewidth}{0pt}
+
+%Primera pagina de un capitulo (solo book):
+\fancypagestyle{plain}{
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+\pagestyle{fancy}
+
+%NUMERACIÓN DE LAS SECCIONES Y SU INCLUSIÓN EN EL ÍNDICE:
+\setcounter{secnumdepth}{6} %Para que numere las subsubsecciones y los paragraph
+\setcounter{tocdepth}{6} %Para que introduzca las subsubsecciones y los paragraph en el índice
+% Do not indent paragraphs nor subparagraphs
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                      {0.0001pt \@plus .2ex}%
+                                      {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}%
+                                      {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                      {0.0001pt \@plus .2ex}%
+                                      {\normalfont\normalsize\bfseries}}
+\makeatother
+
+%Esto es para que numere las tablas, ecuaciones y figuras según el capítulo en el que estén (solo para tipo book).
+%\numberwithin{table}{chapter}
+%\numberwithin{equation}{chapter}
+%\numberwithin{figure}{chapter}
+
+%ENUMERACIONES:
+\usepackage{enumerate}
+
+%TABLAS:
+\usepackage{booktabs}	% Para aumentar grosor de tablas.
+\usepackage{multirow}	% Para poder unir filas y columnas en las tablas.
+\usepackage{colortbl}	% Para colorear tablas.
+%\usepackage{slashbox}	% Para colocar una línea diagonal dividiendo las celdas.
+\usepackage{makecell}
+\usepackage{array}
+\usepackage{pdflscape}  % Para incluir páginas apaisadas compilando con pdflatex
+\usepackage{lscape}     % Para incluir páginas apaisadas compilando con latex
+
+%Para lineas más gruesas en tablas:
+%\thickhline >> línea horizontal de espesor definido en height
+%' >> para columna interior, línea vertical de espesor definido en width (en lugar de |c|, ponemos 'c') 
+%! >> para primera columna a la izquierda, línea vertical de espesor definido en width (en lugar de |c|c|..., ponemos !c|c|...)
+%? >> para primera columna a la izquierda, línea vertical de espesor definido en width (en lugar de ...|c|c|, ponemos ...|c|c?)
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 2pt
+    \futurelet \reserved@a \@xhline
+}
+\newcolumntype{'}{@{\hskip\tabcolsep\vrule width 2pt\hskip\tabcolsep}}
+\newcolumntype{!}{@{\vrule width 2pt\hskip\tabcolsep}}
+\newcolumntype{?}{@{\hskip\tabcolsep\vrule width 2pt}}
+\makeatother
+
+%Para columnas de ancho fija:
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%Para unir columnas:
+%\multicolumn{nº de columnas}{alineación}{texto}
+%Para unir filas:
+%\multirow{nº de filas}{ancho}[desplazamiento vertical]{texto}
+%Para colorear filas:
+%\rowcolor[rgb]{0,1,1}Roque & Fort \\
+%\rowcolor[cmyk]{0.5,0,0,0.1}Abraham & Lapuerta \\
+%Para colorear columnas (se emplea al definir las columnas o con el multicolumn):
+%\begin{tabular}{|>{\columncolor[rgb]{0.7,0,0.7}} c |
+%Para definir un color:
+%\definecolor{micolor}{rgb}{0,1,0.5}
+%Para escalar la tabla al ancho de página:
+%\resizebox{<ancho_deseado>}{!} {<entorno tabular que se desea escalar>}
+
+%MATEMÁTICAS Y SÍMBOLOS:
+%Para introducir formulas matemáticas alinedas (align y align*):
+\usepackage{amsmath,bm}
+%\usepackage{amsmath,amssymb,amsfonts,latexsym}
+
+%Símbolo del euro:
+\usepackage{eurosym} %Para escribir el símbolo del euro se emplea \euro.
+
+%HIPERVÍNCULOS:
+% \usepackage[linktocpage]{hyperref}
+\usepackage[linktocpage,breaklinks=true]{hyperref}
+\hypersetup{
+colorlinks = true,
+%linkcolor  = Red,
+%citecolor  = Red,
+linkcolor  = MidnightBlue,
+citecolor  = OliveGreen,
+urlcolor   = blue
+}
+
+%CREAR COMANDOS PROPIOS
+%Creamos un comando (\courier) para cambiar la letra:
+\newcommand*{\courier}{\fontencoding{\encodingdefault}\fontfamily{pcr}\fontseries{m}\fontshape{n}\selectfont}
+\newcommand*{\couriernegrita}{\fontencoding{\encodingdefault}\fontfamily{pcr}\fontseries{b}\fontshape{n}\selectfont}
+%Creamos un comando para poner el símbolo de marca registrada:
+\newcommand*{\R}{$^{\textregistered}$}
+%Creamos el comando parcial de primer orden:
+\providecommand{\parcial}[2]{\frac{\partial #1}{ \partial #2}}
+%Creamos el comando parcial de segundo orden:
+\providecommand{\pparcial}[2]{\frac{\partial^2 #1}{ \partial #2 ^2}}
+
+%PARA INTRODUCIR CÓDIGO DE MATLAB, FORTRAN:
+\usepackage{listings}
+%\usepackage[]{mcode}	% Paquete de formato especial para MATLAB.
+%\lstinputlisting{nombre_del_documento.m}
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+\definecolor{mybrown}{RGB}{165,42,42}
+
+% Para poner los captions de los códigos en español:
+\renewcommand{\lstlistingname}{Código}
+% Para poner los captions de los códigos en inglés:
+%\renewcommand{\lstlistingname}{Code}
+% Para poner el índice de códigos en español:
+% Documento en español:
+\renewcommand\lstlistlistingname{Índice de códigos}
+% Documento en inglés:
+%\renewcommand\lstlistlistingname{List of Codes}
+
+%Para introducir código Matlab:
+\lstdefinestyle{MATLAB}{
+	language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{black},%
+    morekeywords=[2]{1},
+    keywordstyle=[2]{\color{mylilas}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break,if,elseif,else,switch,case,otherwise,while,function,global},emphstyle=[1]\color{blue}, %some words to emphasise  
+    emph=[2]{all,on}, emphstyle=[2]\color{mylilas},
+}
+
+% Para introducir código Fortran:
+\lstdefinestyle{FORTRAN}{
+	language=[90]Fortran,
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{mybrown},%
+    morekeywords=[2]{1}, 
+    keywordstyle=[2]{\color{mybrown}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{blue},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{real,pointer},emphstyle=[1]\color{mygreen}, %some words to emphasise  
+    emph=[2]{type}, emphstyle=[2]\color{mybrown},
+}
+
+%PARA INTRODUCIR ARCHIVOS PDF EN EL DOCUMENTO:
+\usepackage[final]{pdfpages}
+%\includepdf[pages=inicial-final]{nombre_del_documento}\usepackage[pdftex]{graphicx}
+%NOTA: Es necesario compilar con pdfLaTeX, por lo que hay que cargar este paquete para que las imágenes en .eps no den problemas.
+\usepackage{epstopdf}
+
+%PARA INTRODUCIR TEXTO DE RELLENO:
+\usepackage{lipsum}
+%\lipsup[numero de parrafo inicial - numero de parrafo final]
+
+%PARA VARIAS CITAS BIBLIOGRAFICAS SEPARADAS POR GUION
+\usepackage{cite}
+%HASTA AQUÍ EL PREÁMBULO DEL DOCUMENTO. AHORA COMIENZA EL DOCUMENTO EN SÍ.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

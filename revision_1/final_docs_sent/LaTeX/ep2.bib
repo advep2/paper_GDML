@@ -1,0 +1,4873 @@
+% INSTRUCTIONS FOR INSERTING A CONFERENCE PROCEEDINGS:
+% 1) Use one of the publishers that appear in the list below (e.g. erps 
+%    for IEPC, aaaf (aaaf) for space propulsion conference, AIAA for JPC)
+% 2) The "address" field must contain the location of the conference 
+%    (the publisher address is already provided in the publisher field, 
+%    if you make use of the corresponding string)
+% 3) The number of the paper must be inserted into the field "number"
+
+% INSTRUCTIONS FOR INSERTING A JOURNAL PAPER:
+% Typically these bibtex are standardized already. So just make sure to 
+% use an existing publisher of the list below. The use of the journal
+% string is also suggested
+
+% DO NOT CHANGE COMMON STRINGS!!! USE FULL NAMES!!! change bibtex style if you want
+% initials only, but do not change it here!!!
+
+%----------------------------------------------------------------------
+% COMMON STRINGS 
+%----------------------------------------------------------------------
+
+% AUTHOR STRINGS
+@STRING{adv = {Adri\'an Dom\'{i}nguez-V\'{a}zquez}}
+@STRING{amc = {Alberto Mar\'{i}n-Cebri\'{a}n}}
+@STRING{amd = {Alberto Modesti}}
+@STRING{asg = {Alejandro Sevillano-Gonz\'{a}lez}}
+@STRING{am  = {Aloha Mingo}}
+@STRING{asv = {Alvaro S\'{a}nchez-Villar}}
+@STRING{bt  = {Bin Tian}}
+@STRING{ceb  = {C\'elian Boy\'e}}
+@STRING{cb  = {Claudio Bombardelli}}
+@STRING{de  = {Diego Escobar}}
+@STRING{df  = {Davar Feili}}
+@STRING{dg  = {Diego Garc\'ia}}
+@STRING{dm  = {Davide Maddaloni}}
+@STRING{dp  = {Daniel P\'erez-Grande}}
+@STRING{dpl = {Davide Poli}}
+@STRING{ea  = {Eduardo Ahedo}}
+@STRING{eb  = {Eduard Bosch}}
+@STRING{ebb = {Enrique Bello-Ben\'itez}}
+@STRING{fc  = {Filippo Cichocki}}
+@STRING{fac = {Fabrice Cipriani}}
+@STRING{ft  = {Francesco Taccogna}}
+@STRING{gs  = {Gonzalo S\'anchez-Arriaga}}
+@STRING{gcl  = {Guillermo Cuerva-Lazaro}}
+@STRING{hu  = {Hodei Urrutxua}}
+@STRING{jm  = {Javier Mauri{\~n}o}}
+@STRING{jn  = {Jaume Navarro-Cavall\'{e}}}
+@STRING{jp  = {Jes\'{u}s Pel\'{a}ez}}
+@STRING{jpd  = {Jes\'{u}s Perales-D\'{i}az}}
+@STRING{jz  = {Jiewei Zhou}}
+@STRING{jw  = {Joseph Wang}}
+@STRING{jr  = {Jes\'{u}s Ramos}}
+@STRING{kd  = {K\"athe Dannenmayer}}
+@STRING{mri = {Matteo Ripoli}}
+@STRING{md  = {Mantas Dobkevicius}}
+@STRING{ml  = {Min Li}}
+@STRING{mg  = {Matteo Guaita}}
+@STRING{mi  = {Marco Riccardo Inchingolo}}
+@STRING{mm  = {Mario Merino}}
+@STRING{mms = {Manuel Mart\'{i}nez-S\'{a}nchez}}
+@STRING{mr  = {Mercedes Ruiz}}
+@STRING{ms  = {Maria Smirnova}}
+@STRING{mw  = {Mick Wijnen}}
+@STRING{pf  = {Pablo Fajardo}}
+@STRING{pj  = {Pedro Jim\'enez}}
+@STRING{sc  = {Santiago Casado}}
+@STRING{scorr = {Sara Correyero}}
+@STRING{sch = {Scherezade Barquero}}
+@STRING{sdf = {Simone Dalle Fabbriche}}
+@STRING{tp  = {Tatiana Perrotin}}
+@STRING{vg  = {Victor G\'omez}}
+@STRING{xc  = {Xin Chen}}
+@STRING{yb  = {Yacine Babou}}
+@STRING{yh  = {Yuan Hu}}
+
+@STRING{and = { and }}
+@STRING{ea_mm = ea # and # mm}
+@STRING{mm_ea = mm # and # ea}
+
+% JOURNALS STRINGS
+@STRING{AA = {Acta Astronautica}}
+@STRING{apl = {Applied Physics Letters}}
+@STRING{jpp = {Journal of Propulsion and Power}}
+@STRING{IEEEplasmasci = {IEEE Transactions on Plasma Science}}
+@STRING{PoP = {Physics of Plasmas}}
+@STRING{psst = {Plasma Sources Science and Technology}}
+@STRING{AC = {Applied Sciences}}
+@STRING{JPhysD = {Journal of Physics D: Applied Physics}}
+
+% CONFERENCES STRINGS
+@STRING{gec   = {Gaseous Electronics Conference}}
+@STRING{gec76 = {$76^{th}$ } # gec}
+@STRING{icpig = {International Conference on Plasmas and Ionized Gases}}
+@STRING{icpig31 = {$31^{st}$ } # icpig}
+@STRING{icpig32 = {$32^{nd}$ } # icpig}
+@STRING{icpig35 = {$35^{th}$ } # icpig}
+@STRING{iepc = {International Electric Propulsion Conference}}
+@STRING{iepc31 = {$31^{st}$ } # iepc}
+@STRING{iepc32 = {$32^{nd}$ } # iepc}
+@STRING{iepc33 = {$33^{rd}$ } # iepc}
+@STRING{iepc34 = {$34^{th}$ } # iepc}
+@STRING{iepc35 = {$35^{th}$ } # iepc}
+@STRING{iepc36 = {$36^{th}$ } # iepc}
+@STRING{iepc37 = {$37^{th}$ } # iepc}
+@STRING{iepc38 = {$38^{th}$ } # iepc}
+@STRING{jpc = {AIAA/ASME/ SAE/ASEE Joint Propulsion Conference \& Exhibit}}
+@STRING{jpc45 = {$45^{th}$ } # jpc}
+@STRING{jpc46 = {$46^{th}$ } # jpc}
+@STRING{jpc47 = {$47^{th}$ } # jpc}
+@STRING{jpc48 = {$48^{th}$ } # jpc}
+@STRING{jpc49 = {$49^{th}$ } # jpc}
+@STRING{jpc50 = {$50^{th}$ } # jpc}
+@STRING{jpc51 = {$51^{st}$ } # jpc}
+@STRING{jpc52 = {$52^{nd}$ } # jpc}
+@STRING{sctc = {Spacecraft Charging Technology Conference}}
+@STRING{sctc13 = {$13^{th}$ } # sctc}
+@STRING{sctc14 = {$14^{th}$ } # sctc}
+@STRING{spc = {Space Propulsion Conference}}
+@STRING{spc10 = spc # { 2010}}
+@STRING{spc12 = spc # { 2012}}
+@STRING{spc14 = spc # { 2014}}
+@STRING{spc16 = spc # { 2016}}
+@STRING{spc18 = spc # { 2018}}
+@STRING{spc21 = spc # { 2021}}
+@STRING{spc22 = spc # { 2022}}
+@STRING{escampig = {Europhysics Conference on Atomic and Molecular Physics of Ionized Gases}}
+@string{escampig24 = {$24^{th}$ } # escampig}
+
+% PUBLISHERS STRINGS
+@STRING{AIAA = {American Institute of Aeronautics and Astronautics}}
+@STRING{iop = {IOP Publishing}}
+@STRING{eps = {European Physical Society}}
+@STRING{erps = {Electric Rocket Propulsion Society}}
+@STRING{esa = {European Space Agency}}
+@STRING{jpl_nasa = {NASA's Jet Propulsion Laboratory}}
+@STRING{aaaf = {Association A\'{e}ronautique et Astronautique de France}}
+@STRING{wip = {work in preparation}}
+@STRING{sfp = {submitted for publication}}
+@STRING{afp = {accepted for publication}}
+
+
+% WEBSITE
+@misc{EP2,
+  title = {Equipo de Propulsion Espacial y Plasmas},
+  howpublished = {\url{http://ep2.uc3m.es}}
+}
+
+ 
+% ---------------------------------------------------------------------
+% ------------------ JOURNAL PUBLICATIONS SECTION ---------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+%----------------------------------------------------------------------
+% -------------------------- UNPUBLISHED ------------------------------
+%----------------------------------------------------------------------
+
+@article{boye24a,
+    author = {C\'elian Boy\'e and Jaume Navarro-Cavall\'e and Mario Merino},
+    title = {Magnetic arch plasma expansion in a cluster of two ECR plasma sources},
+    journal = {Journal of Electric Propulsion (under review)},
+    publisher={Springer},
+    url = {https://doi.org/10.21203/rs.3.rs-4412193/v1},
+    year={2024}
+}
+
+@article{bayo24a,
+    author = {Borja Bay\'on-Buj\'an and Mario Merino},
+    title = {Data-driven sparse modeling of oscillations in plasma space propulsion},
+    journal = {Machine Learning Science and Technology},
+    publisher={IOP Publishing},
+    url = {https://doi.org/10.1088/2632-2153/ad6d29},
+    year={2024}
+}
+@misc{bell24,
+      title={Effect of injection conditions on the non-linear behavior of the {ECDI} and related turbulent transport}, 
+      author={Enrique Bello-Benítez and Alberto Marín-Cebrián and Eduardo Ahedo},
+      year={2024},
+      eprint={2405.08761},
+      archivePrefix={arXiv},
+      primaryClass={physics.plasm-ph},
+      note={Pre-print available at \href{https://arxiv.org/pdf/2405.08761}{https://arxiv.org/pdf/2405.08761}}
+}
+
+@article{guai24c,
+    author = mg # and # ea # and # mm,
+    title = {PIC/Fluid Simulations of the Plasma Expansion in a Magnetic Arch},
+    journal = {Plasma Sources Science and Technology (under review)},
+    publisher={IOP Publishing},
+    year={2024}
+}
+
+@article{guai24d,
+    author = mg # and # amc # and # mm # and # ea # and # fac # and # kd,
+    title = {A Full PIC Study of the Neutralization of a Gridded Ion Thruster's Plasma Plume},
+    journal = {Plasma Sources Science and Technology (under review)},
+    publisher={IOP Publishing},
+    year={2024}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2024 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+@article{poli24,
+doi = {10.1088/1361-6595/ad6500},
+url = {https://dx.doi.org/10.1088/1361-6595/ad6500},
+year = {2024},
+month = {jul},
+publisher = {IOP Publishing},
+volume = {33},
+number = {7},
+pages = {075014},
+author = {D Poli and P Fajardo and E Ahedo},
+title = {A non-neutral 1D fluid model of hall thruster discharges: full electron inertia and anode sheath reversal},
+journal = {Plasma Sources Science and Technology},
+abstract = {A non-neutral model (NNM) of the axial plasma discharge in a Hall thruster, including full electron inertia, is presented. In the finite-volume formulation, two types of sheath boundary conditions previously used in the literature are tested and proven to behave practically identically in this model. Both normal and reversed (i.e. electron repelling and attracting, respectively) anode sheaths are admitted. This model is compared with the quasineutral model developed in a previous work, which includes only azimuthal electron inertia and normal anode sheaths. Both models agree excellently within the parametric region where steady-state solutions with a normal anode sheath exist. The NNM shows the absence of steady-state solutions with a reversed anode sheath. Nonetheless, a reversed sheath can appear during the transient to a steady-state solution with a normal sheath and the periodic transition from a normal to a reversed sheath can be observed in the presence of breathing-mode oscillations. In other cases, the reversed sheath leads to the discharge shut-off. Full electron inertia is always important in the presence of a reversed sheath. The parametric threshold of the wall accommodation parameter from a stationary solution to a breathing mode one differs slightly between the non-neutral and the quasi-neutral model.}
+}
+
+
+@article{perr24b,
+  title = {Far-Field Plume Characterization of a Low-Power Cylindrical {{Hall}} Thruster},
+  author = {Perrotin, Tatiana and Vinci, Alfio E. and Mazouffre, St{\'e}phane and Fajardo, Pablo and Ahedo, Eduardo and {Navarro-Cavall{\'e}}, Jaume},
+  year = {2024},
+  month = jul,
+  journal = {Journal of Applied Physics},
+  volume = {136},
+  number = {4},
+  pages = {043304},
+  issn = {0021-8979, 1089-7550},
+  doi = {10.1063/5.0207003},
+  abstract = {A fully cylindrical Hall thruster prototype was tested in the power range of 30--300 W with the objective of understanding the behavior of the discharge as a function of input parameters. Various operating conditions were compared, including two magnetic field configurations, a set of propellant mass flow rates, and a range of discharge voltages. Plasma properties were measured in the plume, with a Langmuir probe, a retarding potential analyzer, and a Faraday cup. The experimental results showed that the mass flow rate strongly affects the ionization and, consequently, other related properties such as the plasma density, currents, and propellant utilization. The discharge voltage also appeared to influence the ion energy and propellant utilization. The performance accessible from the measured magnitudes is assessed, resulting in a maximum thrust efficiency of about 18\% at 0.35 mg s{\`A}1 and 168 W.},
+  publisher={AIP Publishing LLC}
+}
+
+@article{barq24a, 
+doi = {10.1088/1361-6595/ad35e5},
+url = {https://dx.doi.org/10.1088/1361-6595/ad35e5},
+year = {2024},
+month = {4},
+publisher = {IOP Publishing},
+volume = {33},
+number = {4},
+pages = {045007},
+author = {Scherezade Barquero and Jaume Navarro-Cavall\'e and Mario Merino},
+title = {Pulsed plasma thruster exhaust reconstruction},
+journal = {Plasma Sources Science and Technology},
+abstract = {The transient exhaust of an ablative pulsed plasma thruster is characterized experimentally for three capacitances and three discharge voltages, for discharge energies below 11 J. A novel analysis technique is introduced, which reconstructs the exhaust as a superposition of different Maxwellian-like ion groups. Each ion group is characterized by its own mean velocity, thermal spread, initial density, generation time and divergence rate. The time series of three probes working in the ion saturation regime are used to determine the model parameters by least-squares fitting. This approach allows a higher level of accuracy and insight than time-of-flight analysis based on direct feature correlation alone. A good fit of the main part of the discharge time series is achieved with just three ion groups, with mean velocities ranging in 50–70, 30–45 and 10–25 km s−1 respectively. Each ion group differs in the lateral divergence rate and axial thermal spread, and potentially corresponds with a different charge/mass ratio and/or creation time. Some trends with bank capacitance and discharge voltage are identified and discussed.}
+}
+
+@dataset{sim_data_barq24a,
+  author       = {Scherezade Barquero and Jaume Navarro-Cavall\'e and Mario Merino},
+  title        = {{Data from: Pulsed plasma thruster exhaust reconstruction}},
+  year         = 2024,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.10908405},
+  url          = {https://doi.org/10.5281/zenodo.10908405}
+}
+
+@article{inch24a,
+    author = {M. R. Inchingolo and M. Merino and M. Wijnen and J. Navarro-Cavall\'e},
+    title = {Thrust Measurements of a waveguide Electron Cyclotron Resonance Thruster},
+    journal = {Journal of Applied Physics},
+    volume = {135},
+    number = {9},
+    year={2024},
+    month = {3},
+    url = {https://doi.org/10.1063/5.0186778},
+    doi = {10.1063/5.0186778},
+    publisher={AIP Publishing LLC}
+}
+
+@article{mari24a,
+author = amc # and # ebb # and # adv # and # ea,
+title = {Non-Maxwellian electron effects on the macroscopic response of a Hall thruster discharge from an axial–radial kinetic model},
+journal = psst,
+doi = {10.1088/1361-6595/ad227c},
+url = {https://dx.doi.org/10.1088/1361-6595/ad227c},
+year = {2024},
+month = {2},
+publisher = {IOP Publishing},
+volume = {33},
+number = {2},
+pages = {025008},}
+
+@article{jime24a,
+    title = {An implicit, conservative electrostatic particle-in-cell algorithm for paraxial magnetic nozzles},
+    journal = {Journal of Computational Physics},
+    volume = {502},
+    pages = {112826},
+    year = {2024},
+    issn = {0021-9991},
+    doi = {https://doi.org/10.1016/j.jcp.2024.112826}, 
+    author = {Pedro Jiménez and Luis Chacón and Mario Merino},
+    publisher={Elsevier}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2023 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+
+@article{bell23,
+  title = {Stationary axial model of the {H}all thruster plasma discharge: electron azimuthal inertia and far plume effects},
+  volume = {32},
+  url = {http://dx.doi.org/10.1088/1361-6595/ad066f},
+  DOI = {10.1088/1361-6595/ad066f},
+  number = {11},
+  journal = {Plasma Sources Science and Technology},
+  publisher = {IOP Publishing},
+  author = {Bello-Ben\'itez,  E and Ahedo,  E},
+  year = {2023},
+  pages = {115011}
+}
+
+@article{jime23a,
+title={Analysis of a cusped helicon plasma thruster discharge},
+  author={Jim{\'e}nez, Pedro and Zhou, Jiewei and Navarro-Cavall{\'e}, Jaume and Fajardo, Pablo and Merino, Mario and Ahedo, Eduardo},
+  journal={Plasma Sources Science and Technology},
+  doi = {10.1088/1361-6595/ad01da},
+  year={2023},
+  publisher = {IOP Publishing},
+  volume = {32},
+  number = {10},
+  pages = {105013},
+}
+
+
+@article{mode23a,
+AUTHOR={Modesti, Alberto and Cichocki, Filippo and Ahedo, Eduardo},    
+TITLE={Numerical treatment of a magnetized electron fluid model in a 3D simulator of plasma thruster plumes},      
+JOURNAL={Frontiers in Physics},      
+VOLUME={11},           
+YEAR={2023},        
+URL={https://www.frontiersin.org/articles/10.3389/fphy.2023.1286345},       
+DOI={10.3389/fphy.2023.1286345},     	
+ISSN={2296-424X}   
+}
+
+
+@article{barq23a,
+title = {Performance characterization of the $\mu$10 electron-cyclotron-resonance ion thruster using alternative propellants: krypton vs. xenon},
+journal = {Acta Astronautica},
+volume = {211},
+pages = {750-754},
+year = {2023},
+issn = {0094-5765},
+doi = {10.1016/j.actaastro.2023.06.036},
+author = {S. Barquero and K. Tabata and R. Tsukizaki and M. Merino and J. Navarro-Cavall\'e and K. Nishiyama}
+}
+
+@article{poli23,
+	author={Poli, Davide and Bello-Ben\'itez, Enrique and Fajardo, Pablo and Ahedo, Eduardo},
+	title={Time-dependent axial fluid model of the Hall thruster discharge and its plume},
+	journal={Journal of Physics D: Applied Physics},
+	url={http://iopscience.iop.org/article/10.1088/1361-6463/ace2d0},
+	year={2023}	
+}
+
+@article{kim23a,
+  title={Kinetic Electron Cooling in Magnetic Nozzles: experiments and Modeling}, 
+  author={June Young Kim and Kyoung-Jae Chung and Kazunori Takahashi and Mario Merino and Eduardo Ahedo},
+  year={2023},
+  doi={10.1088/1361-6595/acd71c}, 
+  journal={Plasma Sources Science and Technology},
+  publisher = {IOP Publishing},
+  volume = {32},
+  number = {7},
+  pages = {073001},
+}
+ 
+@article{meri23a,
+doi = {10.1088/1361-6595/acd476},
+url = {https://dx.doi.org/10.1088/1361-6595/acd476},
+year = {2023},
+month = {6},
+publisher = {IOP Publishing},
+volume = {32},
+number = {6},
+pages = {065005},
+author = {Mario Merino and Diego Garc\'ia-Lahuerta and Eduardo Ahedo},
+title = {Plasma acceleration in a magnetic arch},
+journal = {Plasma Sources Science and Technology}
+}
+
+@article{ahed23a,
+  title={Using electron fluid models to analyze plasma thruster discharges},
+  author={Ahedo, E.},
+  journal={Journal of Electric Propulsion},
+  volume={2},
+  number={1},
+  pages={2},
+  year={2023},
+  publisher={Springer}
+}
+
+@article{svil23,
+author={\'A. S\'anchez-Villar and F. Boni and V. D\'esangles and J. Jarrige and D. Packan and E. Ahedo and M. Merino},
+title={Comparison of a hybrid model and experimental measurements for a dielectric-coated coaxial {ECR} thruster},
+journal = psst,
+doi = {10.1088/1361-6595/acb00c},
+year = {2023},
+publisher = {IOP Publishing},
+volume = {32},
+number = {1},
+pages = {014002},
+}
+
+@article{tian23,
+doi = {10.1088/2058-6272/ac8399},
+year = {2022},
+month = {11},
+publisher = {IOP Publishing},
+volume = {25},
+number = {1},
+pages = {015401},
+author = {Bin Tian and Mario Merino and Jie Wan and Yuan Hu and Yong Cao},
+title = {Investigation of radial heat conduction with 1D self-consistent model in helicon plasmas},
+journal = {Plasma Science and Technology}
+}
+
+@article{inch23a,
+author = {Inchingolo, M. R.  and Merino,M.  and Navarro-Cavall\'e,J. },
+title = {Plume Characterization of a Waveguide ECR Thruster},
+journal = {Journal of Applied Physics},
+volume = {133},
+number = {11},
+pages = {113304},
+year = {2023},
+doi = {10.1063/5.0138780},
+publisher={AIP Publishing LLC}
+}
+
+@article{pera23a,
+author = {Jes{\'{u}}s Perales-D{\'{i}}az and Adri{\'{a}}n Dom{\'{i}}nguez-V{\'{a}}zquez and Pablo Fajardo and Eduardo Ahedo}, 
+title = {Simulations of driven breathing modes of a magnetically shielded {H}all
+thruster},
+journal = {Plasma Sources Science and Technology},
+volume = {32},
+number = {7},
+publisher = {{IOP} Publishing},
+year = {2023},
+pages = {075011},
+doi = {10.1088/1361-6595/ace651}  
+}
+
+
+@article{zhou23a,
+  author = {J. Zhou and F. Taccogna and P. Fajardo and E. Ahedo},
+  title = {A study of an air-breathing electrodeless plasma thruster discharge},
+  	year = sfp,
+	month = {},
+	publisher = {},
+	volume = {},
+	number = {},
+	pages = {}, 
+	journal = {Propulsion and Power Research}, 
+    ISSN = {}
+}
+
+
+%----------------------------------------------------------------------
+% -------------------------- 2022 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+
+
+@article{cich22a,
+  AUTHOR={Cichocki, Filippo and Navarro-Cavall\'e, Jaume and Modesti, Alberto and Ram\'irez V\'azquez, Gonzalo},   
+  TITLE={Magnetic Nozzle and RPA Simulations vs. Experiments for a Helicon Plasma Thruster Plume},      
+  JOURNAL={Frontiers in Physics},      
+  VOLUME={10},      
+  YEAR={2022},      
+  DOI={10.3389/fphy.2022.876684},      
+  ISSN={2296-424X} 
+}
+
+@article{mari22d,
+    author= amc # and # adv # and # pf # and # ea,
+    title = {Kinetic plasma dynamics in a radial model of a {H}all thruster with a curved magnetic field},
+    journal = psst,
+    doi = {10.1088/1361-6595/ac9a6b},
+    url = {https://doi.org/10.1088/1361-6595/ac9a6b},
+    year = {2022},
+    month = {11},
+    publisher = {IOP Publishing},
+    volume = {31},
+    number = {11},
+    pages = {115003},
+} 
+
+@article{zhao22,
+	doi = {10.1088/1674-1056/ac40fd},
+	year = 2022,
+	month = {6},
+	publisher = {{IOP} Publishing},
+	volume = {31},
+	number = {7},
+	pages = {075203},
+	author = {Yide Zhao and Jinwei Bai and Yong Cao and Siyu Wu and Eduardo Ahedo and Mario Merino and Bin Tian},
+	title = {Plasma{\textendash}wave interaction in helicon plasmas near the lower hybrid frequency},
+	journal = {Chinese Physics B}, 
+} 
+
+@article{zhou22a,
+  author = {J. Zhou and A. Dom\'inguez-V\'azquez and P. Fajardo and E. Ahedo},
+  title = {Magnetized fluid electron model within a two-dimensional hybrid
+simulation code for electrodeless plasma thrusters},
+  	year = 2022,
+	month = {},
+	publisher = {{IOP} Publishing},
+	volume = {31},
+	number = {4},
+	pages = {045021}, 
+	journal = {Plasma Sources Science and Technology}, 
+    ISSN = {0963-0252}
+}
+
+@article{jime22a,
+    author = {Pedro Jim\'enez and Mario Merino and Eduardo Ahedo},
+    title = {Wave propagation and absorption in a Helicon plasma thruster source and its plume},
+    doi = {10.1088/1361-6595/ac5ecd},
+	year = 2022,
+	month = {},
+	publisher = {{IOP} Publishing},
+	volume = {31},
+	number = {4},
+	pages = {045009}, 
+	journal = {Plasma Sources Science and Technology}, 
+    ISSN = {0963-0252}
+}
+
+@article{madd22a, 
+    doi = {10.1088/1361-6595/ac6444},
+	year = 2022,
+	month = {4},
+	publisher = {{IOP} Publishing},
+	volume = {31},
+	number = {4},
+	pages = {045026},
+	author = {Davide Maddaloni and Adri{\'{a}}n Dom{\'i}nguez-V{\'{a}}zquez and Filippo Terragni and Mario Merino},
+	title = {Data-driven analysis of oscillations in Hall thruster simulations},
+	journal = {Plasma Sources Science and Technology},
+    ISSN = {0963-0252}
+}
+
+@article{pera22b,
+  author = {Jes{\'{u}}s Perales-D{\'{i}}az and Adri{\'{a}}n Dom{\'{i}}nguez-V{\'{a}}zquez and Pablo Fajardo and Eduardo Ahedo and Farbod Faraji and Maryam Reza and Tommaso Andreussi}, 
+  title = {Hybrid plasma simulations of a magnetically shielded {H}all thruster},
+  journal = {Journal of Applied Physics},
+  volume = {131},
+  number = {10},
+  publisher = {{AIP} Publishing},
+  year = {2022},
+  pages = {103302},
+  doi = {10.1063/5.0065220}  
+}
+
+
+
+@article{mode22d,
+  author = amd # and # fc # and # ea,
+  title = {A conservative scheme for the upgrade of 3D magnetized electron model for plasma thruster plumes},
+  year = {2022},
+  journal = {Physical review E}
+  }
+  %month = {...},
+  %publisher = {{IOP} Publishing},
+  %volume = {...},
+  %number = {...},
+  %pages = {...}, 
+  %ISSN = {...}
+
+%----------------------------------------------------------------------
+% -------------------------- 2021 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+
+@article{meri21a,
+    year = 2021,  
+    author = {Mario Merino and Judit Nuez and Eduardo Ahedo},
+    title = {Fluid-kinetic model of a propulsive magnetic nozzle},
+    journal = psst,
+    volume = {30},
+    number = {11},
+    pages = {115006},
+    publisher = {{IOP} Publishing},
+    ISSN = {1089-7674},
+    doi = {10.1088/1361-6595/ac2a0b}
+}
+
+@article{pera21b,
+  author = {Jes{\'{u}}s Perales-D{\'{i}}az and Filippo Cichocki and Mario Merino and Eduardo Ahedo}, 
+  title = {Formation and neutralization of electric charge and current of an ion thruster plume},
+  journal = {Plasma Sources Science and Technology},
+  volume = {30},
+  number = {10},
+  pages = {105023},
+  publisher = {{IOP} Publishing},
+  ISSN = {1089-7674},
+  year = 2021,
+  doi = {10.1088/1361-6595/ac2a19}  
+}
+
+@article{mari21b,
+  author = amc # and # adv # and # pf # and # ea,
+  title = {Macroscopic plasma analysis from 1{D}-radial kinetic results of a {H}all thruster discharge},
+  publisher = iop,
+  journal = psst,
+  volume = {30},
+  number = {11},
+  pages  = {115011},
+  month  = {November},
+  year   = {2021},
+  ISSN   = {},
+  doi = {10.1088/1361-6595/ac325e},
+  url = {https://doi.org/10.1088/1361-6595/ac325e}
+}
+
+@article{ramo21,
+    author  = {Ramos,J. J.  and Bello-Ben\'itez,E.  and Ahedo,E. },
+    title   = {Local analysis of electrostatic modes in a two-fluid {E x B} plasma},
+    journal = {Physics of Plasmas},
+    volume  = {28},
+    number  = {5},
+    pages   = {052115},
+    year    = {2021},
+    doi     = {10.1063/5.0039341},
+    url     = {https://doi.org/10.1063/5.0039341},
+}
+
+
+@article{domi21a, 
+    doi = {10.1088/1361-6595/ac1715}, 
+    year = 2021,
+    month = {8},
+    publisher = {{IOP} Publishing},
+    volume = {30},
+    number = {8},
+    pages = {085004},
+    author = {A. Dom{\'i}nguez-V{\'{a}}zquez and F. Cichocki and M. Merino and P. Fajardo and E. Ahedo},
+    title = {On heavy particle-wall interaction in axisymmetric plasma discharges},
+    journal = {Plasma Sources Science and Technology},
+    ISSN = {1089-7674}
+}
+
+@article{cich21a,
+title = {Three-dimensional neutralizer effects on a {Hall}-effect thruster near plume},
+journal = AA,
+volume = {187},
+pages = {498-510},
+year = {2021},
+issn = {0094-5765},
+doi = {10.1016/j.actaastro.2021.06.042},
+author = {Cichocki, F. and Dom\'inguez-V\'azquez, A. and Merino, M. and Fajardo, P. and Ahedo, E.},
+keywords = {Neutralizer, Cathode, Magnetized plasma plume, Three-dimensional asymmetry effects, EP2PLUS},
+}
+
+
+@Article{zhou21a,
+  Title                    = {Time-dependent expansion of a weakly-collisional plasma beam in a paraxial magnetic nozzle},
+  Author                   = {Zhou, Jiewei and S{\'a}nchez-Arriaga, Gonzalo and Ahedo, Eduardo},
+  Journal                  = psst,
+  doi                      = {10.1088/1361-6595/abeff3},
+  Year                     = 2021,
+  Number                   = {4},
+  Pages                    = {045009},
+  Volume                   = {30},
+  Publisher                = iop
+}   
+
+@article{bell21a,
+	doi = {10.1088/1361-6595/abde21},
+	year = 2021,
+	month = {3},
+	publisher = {{IOP} Publishing},
+	volume = {30},
+	number = {3},
+	pages = {035003},
+	author = {Bello-Ben\'itez, E. and Ahedo, E.},
+	title = {Axial-azimuthal, high-frequency modes from global linear-stability model of a {Hall} thruster},
+	journal = {Plasma Sources Science and Technology}
+}
+ 
+@article{svil21a,
+  doi = {10.1088/1361-6595/abde20},
+  author = {A. S\'anchez-Villar and J. Zhou and M. Merino and E. Ahedo},
+  title = {Coupled plasma transport and electromagnetic wave simulation of an {ECR} thruster},
+  journal = psst,
+  volume = {30},
+  number = {4},
+  pages = {045005},
+  ISSN = {1089-7674},
+  year = 2021,
+  publisher = {{IOP} Publishing}
+}	
+	
+@article{wijnen21,
+        title={Mechanically Amplified Milli-Newton Thrust Balance for Direct Thrust Measurements of Electric Thrusters for Space Propulsion},
+	author  = {Wijnen, M. and Navarro-Cavall\'e, J. and Fajardo, P.},
+	journal = {IEEE Transactions on Instrumentation and Measurement},
+	volume = {70},
+    number = {},
+    pages = {3505318},
+    ISSN = {},
+    year = {2021},
+    doi = {10.1109/TIM.2020.3037305}
+}
+ 
+%----------------------------------------------------------------------
+% -------------------------- 2020 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+ 
+@article{kaga20a,
+  author = {Igor D. Kaganovich and Andrei Smolyakov and Yevgeny Raitses and Eduardo Ahedo and Ioannis G. Mikellides and Benjamin Jorns and Francesco Taccogna and Renaud Gueroult and Sedina Tsikata and Anne Bourdon and Jean-Pierre Boeuf and Michael Keidar and Andrew Tasman Powis and Mario Merino and Mark Cappelli and Kentaro Hara and Johan A. Carlsson and Nathaniel J. Fisch and Pascal Chabert and Irina Schweigert and Trevor Lafleur and Konstantin Matyash and Alexander V. Khrabrov and Rod W. Boswell and Amnon Fruchtman},
+  title = {Perspectives on Physics of ExB Discharges Relevant to Plasma Propulsion and Similar Technologies},
+  journal = {Physics of Plasmas},
+  volume = {27},
+  number = {12},
+  pages = {120601},
+  year = {2020},
+  doi = {10.1063/5.0010135},
+  ISSN = {1089-7674},
+}
+ 
+@ARTICLE{taka20a,
+  author = {Takahashi, Kazunori and Charles, Christine and Boswell, Rod W. and Takao, Yoshinori and Fruchtman, Amnon and Navarro-Cavall\'e, Jaume and Merino, Mario},   
+  title = {Commentary: On helicon thrusters: Will they ever fly?},      
+  journal = {Frontiers in Physics},      
+  volume = {8},      
+  pages = {277},     
+  year = {2020},      
+  doi = {10.3389/fphy.2020.00277},      
+  issn = {2296-424X}   
+}
+
+@article{cich20a,
+  author = {Filippo Cichocki and Mario Merino and Eduardo Ahedo},
+  title = {Three-dimensional geomagnetic field effects on a plasma thruster plume expansion},
+  journal = AA,
+  volume = "175",
+  pages = "190 - 203",
+  year = "2020",
+  issn = "0094-5765", 
+  doi = {10.1016/j.actaastro.2020.05.019}
+}
+ 
+@article{meri20a,
+  author = {Mario Merino and Pablo Fajardo and Gabriel Giono and Jon Tomas Gudmundsson and Nickolay Ivchenko and St\'ephane Mazouffre and Dimitry Loubere
+  and K\"athe Dannenmayer},
+  title = {Collisionless electron cooling in a plasma thruster plume: experimental validation of a kinetic model},
+  journal = psst,
+  volume = {29},
+  number = {3},
+  pages = {035029},
+  ISSN = {1089-7674},
+  year = {2020},
+  doi = {10.1088/1361-6595/ab7088}
+}
+
+@article{ahed20a,
+	doi = {10.1088/1361-6595/ab7855}, 
+	year = 2020, 
+	publisher = {{IOP} Publishing},
+	volume = {29},
+	number = {4},
+	ISSN = {1089-7674},
+	pages = {045017},
+	author = {Eduardo Ahedo and Sara Correyero and Jaume Navarro and
+	Mario Merino},
+	title = {Macroscopic and parametric study of a kinetic plasma expansion in a paraxial magnetic nozzle},
+	journal = {Plasma Sources Science and Technology}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2019 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+
+@article{corr19a,
+  author = {Correyero, Sara and Merino, Mario and Elias, Paul-Quentin and Jarrige, Julien  and Packan, Denis and Ahedo, Eduardo},
+  title = {Characterization of diamagnetism inside an {ECR} thruster with a diamagnetic loop},
+  journal = PoP,
+  volume = {26},
+  number = {5},
+  pages = {053511},
+  ISSN = {1089-7674},
+  year = {2019},
+  doi = {10.1063/1.5093980}
+} 
+
+@article{corr19d,
+  title={Plasma beam characterization along the magnetic nozzle of an {ECR} thruster},
+  author=  {Correyero, S and Jarrige, J and Packan, D and Ahedo, E},
+  journal= psst,
+  volume={28},
+  number={9},
+  pages={095004},
+  year={2019},
+  publisher= iop,
+  doi = {10.1088/1361-6595/ab38e1}
+}
+
+@article{zhou19a,
+ title={Numerical treatment of a magnetized electron fluid within an electromagnetic plasma thruster code},
+ author= jz # and # dp # and # pf # and # ea,
+ journal= psst,
+ volume={28},
+ number={11},
+ pages={115004},
+ year={2019},
+}
+
+@article{li19a,
+ title={On electron boundary conditions in {PIC} plasma thruster plume simulations},
+ author= ml # and # mm # and # ea # and # {Haibin Tang},
+ journal= psst,
+ volume={28},
+ number={03},
+ pages={034004},
+ year={2019},
+ doi = {10.1088/1361-6595/ab0949}, 
+ publisher= iop,
+ ISSN = {0963-0252} 
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2018 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+
+
+@article{tian18a,
+ author= bt # and # mm # and # ea,
+ title={Two-dimensional plasma-wave interaction in an helicon plasma thruster with magnetic nozzle},
+ volume={27},
+ number={11},
+ pages={114003},
+ year={2018},
+ doi = {10.1088/1361-6595/aaec32},
+ journal= psst,
+ publisher= iop,
+ ISSN = {0963-0252} 
+}
+    
+@article{domi18c,
+ author = {A. Dom{\'i}nguez-V{\'{a}}zquez and F. Cichocki and M. Merino and P. Fajardo and E. Ahedo},
+ title={Axisymmetric plasma plume characterization with 2{D} and 3{D} particle codes},
+ volume={27},
+ number={10},
+ pages={104009},
+ year={2018},
+ doi = {10.1088/1361-6595/aae702},
+ journal= psst,
+ publisher={IOP},
+ ISSN = {0963-0252} 
+}
+
+@article{chen18a,
+ author = {Chen, X. and Sanchez-Arriaga, G.},
+ title = {{Current-Voltage} and {Floating-Potential} characteristics of cylindrical emissive probes from a full-kinetic model based on the orbital motion theory},
+ journal = {Journal of Physics: Conference Series },
+ year = {2018},
+ volume = {958},  
+ pages={012001},
+ doi = {10.1088/1742-6596/958/1/012001},
+ number = {1} 
+}
+
+@article{cich18a,
+ title={Spacecraft-plasma-debris interaction in an ion beam shepherd mission},
+ author= fc # and # mm # and # ea,
+ journal= AA,
+ volume={146},
+ pages={216--227},
+ year={2018},
+ publisher={Elsevier},
+ doi = {10.1016/j.actaastro.2018.02.030},
+ issn = "0094-5765"
+}
+
+@article{domi18a,
+ title={Particle modeling of radial electron dynamics in a controlled discharge of a {H}all thruster},
+ author= adv # and # ft # and # ea,
+ journal= psst,
+ volume={27},
+ number={6},
+ pages={064006},
+ year={2018},
+ publisher={IOP}
+}
+
+@article{domi19c,
+ title = {Parametric study of the radial plasma-wall interaction in a {Hall} thruster},
+ author= adv # and # ft # and # pf # and # ea,
+ journal = JPhysD,
+ volume = {52},
+ number = {47},
+ pages = {474003},
+ year = {2019},
+ publisher = {IOP},
+ doi = {10.1088/1361-6463/ab3c7b},
+ url = {https://doi.org/10.1088\%2F1361-6463\%2Fab3c7b}
+}
+
+@ARTICLE{gion18,
+  author = {Giono, Gabriel and Gudmundsson, J\'on and Ivchenko, Nickolay and Mazouffre, Stephane and } # kd # { and Popelier, Lara and Loubere, Dimitry and } # mm # { and Olentsenko, Georgi},
+  title = {Non-Maxwellian Electron Energy Probability Functions in the plume of a {SPT-100} {H}all thruster},
+  journal = psst,
+  doi = {10.1088/1361-6595/aaa06b},
+  volume = {27},
+  number = {1},
+  pages = {015006},
+  year = {2018},
+  publisher = {IOP},
+  ISSN = {0963-0252}
+} 
+
+@article{meri18a,
+ title={Kinetic electron model for plasma thruster plumes},
+ author= mm # and # jm # and # ea,
+ journal= psst,
+ volume={27},
+ number={3},
+ pages={035013},
+ doi = {10.1088/1361-6595/aab3a1},  
+ year = {2018},
+ publisher = iop,
+ ISSN = {0963-0252}
+}
+
+@article{nava18a,
+ title={Experimental Characterization of a 1 k{W} Helicon Plasma Thruster},
+ author={Navarro-Cavall{\'e}, J and Wijnen, M and Fajardo, P and Ahedo, E},
+ journal={Vacuum},
+ volume={149},
+ pages={69--73},
+ year={2018},
+ publisher={Elsevier},
+ doi={10.1016/j.vacuum.2017.11.036}
+}
+
+@ARTICLE{ramo18a,
+  author = jr # and # mm # and # ea,
+  title = {Three dimensional fluid-kinetic model of a magnetically guided plasma jet},
+  journal = PoP,
+  volume = {25},
+  number = {6},
+  pages = {061206},
+  year = {2018},
+  ISSN = {1089-7674},
+  doi = {10.1063/1.5026972}
+} 
+
+@article{sanc18a,
+ author = {G. Sanchez-Arriaga and X. Chen},
+ title = {Modeling and performance of electrodynamic low-work-function tethers with photoemission effects},
+ journal = {Journal of Propulsion and Power},
+ volume = "34",
+ number = "1", 
+ year = {2018},
+ doi = {10.2514/1.B36561},
+ pages = {213-220} 
+}
+
+@Article{sanc18b,
+  Title                    = {Kinetic features and non-stationary electron trapping in paraxial magnetic nozzles},
+  Author                   = {S{\'a}nchez-Arriaga, Gonzalo and Zhou, Jiewei and Ahedo, E and Mart{\'i}nez-S{\'a}nchez, Manuel and Ramos, Jes{\'u}s Jos{\'e}},
+  Journal                  = psst,
+  Year                     = {2018},
+  Number                   = {3},
+  Pages                    = {035002},
+  Volume                   = {27},
+  Publisher                = iop
+}   
+
+%----------------------------------------------------------------------
+% -------------------------- 2017 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+@article{chen17a,
+ author = "Chen, Xin and Sanchez-Arriaga, G.",
+ title = "Orbital motion theory and operational regimes for cylindrical emissive probes",
+ journal = "Physics of Plasmas",
+ year = "2017",
+ volume = "24",
+ number = "2",
+ doi = {10.1063/1.4975088},
+ pages = "023504"
+}
+
+@article{chen17b,
+ author = "Chen, Xin and Sanchez-Arriaga, G.",
+ title = "Kinetic features of collisionless sheaths around polarized cylindrical emitters from the orbital motion theory",
+ journal = "Phys. Plasmas",
+ year = "2017",
+ volume = "24",
+ doi = {10.1063/1.5004682},
+ number = "10",
+ pages = "103515"
+}
+
+@article{cich17a,
+ title={Electric Propulsion Subsystem Optimization for “{I}on {B}eam {S}hepherd” Missions},
+ author= fc # and # mm # and # ea # and # ms # and # am # and # md,
+ journal= jpp,
+ year = {2017},
+ volume = {33},
+ number = {2},
+ pages  = {370-378},
+ doi       = {10.2514/1.B36105},
+ issn      = {0748-4658},
+ numpages  = {9},
+ publisher = AIAA
+}
+
+@article{cich17b,
+ author = fc # and # adv # and # mm # and # ea,
+ title = {Hybrid {3D} model for the interaction of plasma thruster plumes with nearby objects},
+ journal = psst,
+ doi = {10.1088/1361-6595/aa986e},
+ volume = {26},
+ number = {12},
+ pages  = {125008},
+ year = {2017},
+ publisher = iop,
+ ISSN = {0963-0252}
+}
+
+@article{meri17b,
+ title={Contactless steering of a plasma jet with a {3D} magnetic nozzle},
+ author= mm # and # ea,
+ journal= psst,
+ volume={26},
+ number={9},
+ pages={095001},
+ year={2017},
+ publisher={IOP},
+ ISSN = {0963-0252},   
+ doi = {10.1088/1361-6595/aa8061}
+}
+
+@article{sanc17,
+ author = "{G. Sanchez-Arriaga, Xin Chen,  E.C. Lorenzini}",
+ title = {Optimal design and deorbiting performance of thermionic tethers in geostationary transfer orbits},
+ journal = {Journal of Propulsion and Power},
+ year = {2017},
+ volume = "33",
+ number = "2",
+ pages = {425-432} ,   
+ doi = {10.2514/1.B36202} 
+}
+
+@article{sanm17,
+ author = {Sanmartin, J.R. and Chen, X. and Sanchez-Arriaga, G.},
+ title = {Analysis of thermionic bare tether operation regimes in passive mode},
+ journal = {Physics of Plasmas},
+ year = {2017},
+ volume = {24},
+ number = {1}, 
+ pages = {013515},   
+ doi = {10.1063/1.4974764} 
+}
+%----------------------------------------------------------------------
+% -------------------------- 2016 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+
+@article{alpa16,
+ title={Determination of the force transmitted by an ion thruster plasma plume to an orbital object},
+ author={Alpatov, A.} # and # fc # and # {Fokov, A. and Khoroshylov, S.} # and # mm # and # {Zakrzhevskii, A.},
+ journal= AA,
+ volume={119},
+ pages={241--251},
+ year={2016},
+ publisher={Elsevier},
+ ISSN = {0094-5765},
+ doi = {10.1016/j.actaastro.2015.11.020},
+}
+% A russian-ukranian version exists, alpa16b in our papers folder
+
+@article{meri16a,
+ author = mm # and # ea,
+ title = {Fully magnetized plasma flow in a magnetic nozzle},
+ journal = PoP,
+ year = {2016},
+ volume = {23},
+ number = {2},
+ pages = {023506},
+ numpages = {7},
+ publisher = {AIP},
+ ISSN = {1089-7674},
+ doi = {10.1063/1.4941975}
+}
+
+@article{pere16,
+ author = dp # and # {O. Gonz\'alez-Mart\'inez} # and # pf # and # ea,
+ title = {Analysis of the numerical diffusion in anisotropic mediums: benchmarks for magnetic field aligned meshes in space propulsion simulations},
+ journal = AC,
+ year = {2016},
+ volume = {6},
+ number = {11},
+ pages = {354},
+ numpages = {},
+ publisher = {MDPI},
+ doi = {}
+}
+
+@article{meri16b,
+ author = mm # and # ea,
+ title = {Effect of the plasma-induced magnetic field on a magnetic nozzle},
+ journal = psst,
+ volume={25},
+ number={4},
+ numpages = {9},
+ pages={045012},
+ publisher = {IOP},
+ ISSN = {0963-0252}, 
+ year={2016},
+ doi = {10.1088/0963-0252/25/4/045012}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2015 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+@article{chen15,
+ author = "Chen, Xin and Sanmartin, J.R.",
+ title = "Low work-function thermionic emission and orbital-motion-limited ion collection at bare-tether cathodic contact",
+ journal = "Physics of Plasmas",
+ year = "2015",
+ volume = "22",
+ number = "5",
+ pages = "053504",
+ doi = {10.1063/1.4919945}
+}
+ 
+@article{meri15a,
+ author = mm # and # ea,
+ title = {Influence of Electron and Ion Thermodynamics on the Magnetic Nozzle Plasma Expansion},
+ journal = IEEEplasmasci,
+ year = {2015},       
+ month={1},
+ volume={43},
+ number={1},
+ pages={244--251},
+ doi={10.1109/TPS.2014.2316020},
+ ISSN={0093-3813},
+}
+
+@article{meri15b,
+ author = mm # and # fc # and # ea,
+ title = {A collisionless Plasma thruster plume expansion model},
+ journal = {Plasma Sources Science and Technology},
+ year = {2015},
+ volume={24},
+ number={3},
+ pages={035006},
+ numpages = {12},
+ publisher = iop,
+ ISSN = {0963-0252}, 
+ doi = {10.1088/0963-0252/24/3/035006}
+}
+
+@article{esco15,
+ title={Global stability analysis of azimuthal oscillations in Hall thrusters},
+ author= de # and # ea,
+ journal=IEEEplasmasci,
+ volume={43},
+ number={1},
+ pages={149--157},
+ year={2015},
+ publisher={IEEE}
+}
+
+@article{ahed15d,
+ title={Low frequency azimuthal stability of the ionization region of the {Hall} thruster discharge. {II}. {G}lobal analysis},
+ author= {Escobar, D. and Ahedo, E.},
+ journal=PoP,
+ volume={22},
+ pages={102114},
+ year={2015},
+ publisher={AIP}
+}
+
+@article{mart15a,
+ title={Electron Cooling and Finite Potential Drop in a Magnetized Plasma Expansion},
+ author= mms # and # jn # and # ea,
+ journal= PoP,
+ volume={22},
+ number={5},
+ pages={053501},
+ year={2015},
+ publisher={AIP},
+ doi={10.1063/1.4919627}
+}
+
+@article{sanc15,
+ author = {Sanchez-Arriaga, G. and Bombardelli, C. and Chen, Xin},
+ title = {Impact of nonideal effects on bare electrodynamic tether performance},
+ journal = {Journal of Propulsion and Power},
+ year = {2015},
+ volume = {31},
+ number = {3},
+ pages = {951-955}, 
+ doi = {10.2514/1.B35393}
+}
+%----------------------------------------------------------------------
+% -------------------------- 2014 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+
+@article{meri14a,
+ author = mm # and # ea,
+ title = {Plasma detachment in a propulsive magnetic nozzle via ion demagnetization},
+ journal = psst,
+ year = {2014},
+ volume = {23},
+ pages = {032001},
+ number={3},
+ numpages = {5},
+ publisher = {IOP},
+ ISSN = {0963-0252}, 
+ doi = {10.1088/0963-0252/23/3/032001}
+}
+
+@article{esco14,
+ title={Low frequency azimuthal stability of the ionization region of the Hall thruster discharge. I. Local analysis},
+ author= de # and # ea,
+ journal=PoP,
+ volume={21},
+ number={4},
+ pages={043505},
+ year={2014},
+ publisher={AIP}
+}
+
+@article{ahed14a,
+ title={Low frequency azimuthal stability of the ionization region of the {Hall} thruster discharge. {I}. {L}ocal analysis},
+ author= {Escobar, D. and Ahedo, E.},
+ journal=PoP,
+ volume={21},
+ number={4},
+ pages={043505},
+ year={2014},
+ publisher={AIP}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2013 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+@article{meri13a,
+ author = mm # and # ea,
+ title = {Two-dimensional quasi-double-layers in two-electron-temperature, current-free plasmas},
+ journal = PoP,
+ year = {2013},
+ volume = {20},
+ number = {2},
+ pages = {023502},
+ numpages = {11},
+ publisher = {AIP},
+ ISSN = {1089-7674},
+ timestamp = {2014.01.13},
+ doi = {10.1063/1.4789900}
+}
+
+@article{ahed13c,
+ title={Helicon Thruster Plasma Modeling: Two-Dimensional Fluid-Dynamics and Propulsive Performances},
+ author= ea # and # jn,
+ journal=PoP,
+ volume={20},
+ number={4},
+ pages={043512},
+ year={2013},
+ publisher={AIP Publishing}, 
+ address = {Melville, {NY}},
+ DOI = {10.1063/1.4798409}
+}
+
+@Article{bomb13,
+  Title                    = {The ion beam shepherd: A new concept for asteroid deflection},
+  Author                   = cb # and # hu # and # mm_ea # and # jp,
+  Journal                  = AA,
+  Year                     = {2013},
+  Number                   = {1},
+  Pages                    = {98 - 102},
+  Volume                   = {90},
+  Doi                      = {10.1016/j.actaastro.2012.10.019},
+  ISSN                     = {0094-5765},
+  Publisher                = {Elsevier, Amsterdam, The Netherlands},
+  Timestamp                = {2014.01.13}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2012 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+@article{ahed12a,
+ title={Supersonic regime of the {H}all-magnetohydrodynamics resistive tearing instability},
+ author = ea # and # {Ramos, Jes{\'u}s J},
+ journal= PoP,
+ volume={19},
+ number={7},
+ pages={072519},
+ year={2012},
+ publisher={AIP}
+}
+
+@article{ahed12b,
+ author = ea # and # mm,
+ title = {Two-dimensional plasma expansion in a magnetic nozzle: separation due to electron inertia},
+ journal = PoP,
+ year = {2012},
+ volume = {19},
+ number = {8},
+ pages = {083501},
+ numpages = {9},
+ publisher = {AIP},
+ ISSN = {1089-7674},
+ doi = {10.1063/1.4739791}
+}
+
+@article{chen12,
+ author = "Chen, Xin and Sanmartin, J.R.",
+ title = "Bare-tether cathodic contact through thermionic emission by low-work-function materials",
+ journal = PoP,
+ year = "2012",
+ volume = "19",
+ number = "7",
+ pages = "073508"
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2011 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+@Article{ahed11a,
+  author  = {Ahedo, E.},
+  title   = {Double-layer formation and propulsive assessment for a three-species plasma expanding in a magnetic nozzle},
+  year    = {2011},
+  volume  = {18},
+  pages   = {033510},
+  journal = {Physics of Plasmas},
+}
+
+@ARTICLE{ahed11b,
+  author = {Mart{\'i}nez-S{\'a}nchez, M. and Ahedo, E.},
+  title = {Magnetic Mirror Effects on a Collisionless Plasma in a Convergent
+	Geometry},
+  journal = {Physics of Plasmas},
+  year = {2011},
+  volume = {18},
+  pages = {033509}
+}
+
+@ARTICLE{ahed11c,
+  author = {Eduardo Ahedo},
+  title = {Double-layer formation and propulsive assessment for a three-species
+	plasma expanding in a magnetic nozzle},
+  journal = PoP,
+  year = {2011},
+  volume = {18},
+  pages = {033510},
+  number = {3},
+  eid = {033510},
+  doi = {10.1063/1.3567159},
+  keywords = {electron density; hot carriers; Mach number; nozzles; plasma density; plasma magnetohydrodynamics; plasma sheaths; plasma temperature; plasma thermodynamics},
+  numpages = {11},
+  publisher = {AIP}
+}
+
+@ARTICLE{ahed11d,
+  author = ea_mm,
+  title = {On plasma detachment in propulsive magnetic nozzles},
+  journal = PoP,
+  year = {2011},
+  volume = {18},
+  number={5},
+  pages = {053504},
+  doi = {10.1063/1.3589268},
+  issn = {1089-7674},
+  numpages = {8},
+  publisher={AIP Publishing},
+  address={Melville, {NY}},
+  timestamp = {2014.01.13}
+}
+
+@ARTICLE{ahed11j,
+  author = {Merino, M. and Ahedo, E.},
+  title = {Simulation of plasma flows in divergent magnetic nozzles},
+  journal = {IEEE Transactions Plasma Science (to appear in August)},
+  year = {2011}
+}
+
+@article{ahedo11r,
+ title={Magnetic confinement of a high-density cylindrical plasma},
+ author= ea,
+ journal= PoP,
+ volume={18},
+ number={10},
+ pages={103506},
+ year={2011},
+ publisher={AIP}
+}
+
+@article{ahed11s,
+ author = {Eduardo Ahedo},
+ title = {Plasmas for space propulsion},
+ journal = {Plasma Physics and Controlled Fusion},
+ year = {2011},
+ volume = {53},
+ pages = {124037},
+ number = {12},
+ publisher= iop,
+ url = {http://stacks.iop.org/0741-3335/53/i=12/a=124037},
+ abstract = {Plasma thrusters are c{Hall}enging the monopoly of chemical thrusters in space propulsion. The specific energy that can be deposited into a plasma beam is orders of magnitude larger than the specific chemical energy of known fuels. Plasma thrusters constitute a vast family of devices ranging from already commercial thrusters to incipient laboratory prototypes. Figures of merit in plasma propulsion are discussed. Plasma processes and conditions differ widely from one thruster to another, with the pre-eminence of magnetized, weakly collisional plasmas. Energy is imparted to the plasma via either energetic electron injection, biased electrodes or electromagnetic irradiation. Plasma acceleration can be electrothermal, electrostatic or electromagnetic. Plasma–wall interaction affects energy deposition and erosion of thruster elements, and thus is central for thruster efficiency and lifetime. Magnetic confinement and magnetic nozzles are present in several devices. Oscillations and turbulent transport are intrinsic to the performances of some thrusters. Several thrusters are selected in order to discuss these relevant plasma phenomena.}
+}
+
+@ARTICLE{meri11e,
+  author = mm_ea,
+  title = {Simulation of Plasma Flows in Divergent Magnetic Nozzles},
+  journal = IEEEplasmasci,
+  year = {2011},
+  volume = {39},
+  pages = {2938--2939},
+  number = {11},
+  doi = {10.1109/TPS.2011.2158325},
+  issn = {0093-3813},
+  numpages = {2},
+  publisher = {IEEE},
+  timestamp = {2014.01.13}
+}
+
+@article{mart11,
+ title={Magnetic mirror effects on a collisionless plasma in a convergent geometry},
+ author= mms # and # ea,
+ journal= PoP,
+ volume={18},
+ number={3},
+ pages={033509},
+ year={2011},
+ publisher={AIP}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2010 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+@ARTICLE{ahed10g,
+  author = {Ahedo, E. and Santos, R. and Parra, F.},
+  title = {Fulfillment of the kinetic {B}ohm criterion in a quasineutral particle-in-cell model},
+  journal = PoP,
+  year = {2010},
+  volume = {17},
+  number={7},
+  pages = {073507},
+  publisher={AIP Publishing, Melville, {NY}}
+}
+
+@article{ahed10f,
+ author = ea # and # mm,
+ title = {Two-Dimensional Supersonic Plasma Acceleration in a Magnetic Nozzle},
+ journal = PoP,
+ year = {2010},
+ volume = {17},
+ number = {7},
+ pages = {073501},
+ numpages = {15},
+ ISSN = {1089-7674},
+ publisher = {AIP Publishing, Melville, {NY}},
+ timestamp = {},
+ doi = {10.1063/1.3442736}
+}
+
+@ARTICLE{ahed10p,
+  author = {Ahedo, E.},
+  title = {Proyecto HPH.COM: cohetes el{\'e}ctricos para el futuro espacial},
+  journal = {Revista UPM},
+  year = {2010},
+  volume = {18},
+  pages = {16--19}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2009 JOURNALS ----------------------------
+%----------------------------------------------------------------------
+@ARTICLE{ahed09,
+  author = {Ahedo, Eduardo and {Mart\'inez S\'{a}nchez}, Manuel},
+  title = {{Theory of a Stationary Current-Free Double Layer in a Collisionless
+	Plasma}},
+  journal = {Physical Review Letters},
+  year = {2009},
+  volume = {103},
+  pages = {1--4},
+  number = {13},
+  doi = {10.1103/PhysRevLett.103.135002},
+  issn = {0031-9007},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.103.135002}
+}
+
+@ARTICLE{ahed09b,
+  author = {Ahedo, E. and Carralero, D.},
+  title = {Model of a source-driven plasma interacting with a wall in an oblique
+	magnetic field},
+  journal = {Physics of Plasmas},
+  year = {2009},
+  volume = {16},
+  pages = {043506}
+}
+
+@ARTICLE{ahed09c,
+  author = {Ahedo, E. and Ramos, J.},
+  title = {Parametric analysis of the two-fluid tearing instability},
+  journal = {Plasma Physics and Controlled Fusion},
+  year = {2009},
+  volume = {51},
+  pages = {055018}
+}
+
+@ARTICLE{ahed09k,
+  author = {Ahedo, E.},
+  title = {Parametric analysis of a magnetized cylindrical plasma},
+  journal = {Physics of Plasmas},
+  year = {2009},
+  volume = {16},
+  number = {11},
+  pages = {113503}
+}
+
+@ARTICLE{ahed09j,
+  author = {Eduardo Ahedo and Manuel Mart\'inez-S\'anchez},
+  title = {Theory of a Stationary Current-Free Double Layer in a Collisionless
+	Plasma},
+  journal = {Physical Review Letters},
+  year = {2009},
+  volume = {103},
+  pages = {135002}, 
+  doi = {10.1103/PhysRevLett.103.135002},
+  number={13},
+  numpages = {4},
+  publisher = {American Physical Society}
+}
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% -------------------- JOURNALS BEFORE 2009 ---------------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+@ARTICLE{ahed87a,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R.},
+  title = {Resonant absorption in a plasma step profile},
+  journal = {Plasma Physics and Controlled Fusion},
+  year = {1987},
+  volume = {29},
+  pages = {419--432}
+}
+
+@ARTICLE{ahed89,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R.},
+  title = {Self-consistent resonance absorption with two-layer profile steepening},
+  journal = {Physics of Fluids B},
+  year = {1989},
+  volume = {1},
+  pages = {2450--2461}
+}
+
+@ARTICLE{ahed92a,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {Current collection by an active spherical electrode in an unmagnetized
+	plasma},
+  journal = {Physics of Fluids B},
+  year = {1992},
+  volume = {4},
+  pages = {3847--3855}
+}
+
+@ARTICLE{ahed92d,
+  author = {Samanta-Roy, R.I. and Hastings, D.E. and Ahedo, E.},
+  title = {Systems analysis of electrodynamic tethers},
+  journal = {Journal of Spacecraft and Rockets},
+  year = {1992},
+  volume = {29},
+  pages = {415--424}
+}
+
+@ARTICLE{ahed92e,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E.},
+  title = {La electrodin{\'a}mica de cables espaciales},
+  journal = {Ingenier{\'i}a Aeron{\'a}utica y Astron{\'a}utica},
+  year = {1992},
+  volume = {328},
+  pages = {2--11}
+}
+
+@ARTICLE{ahed93,
+  author = {Sanmart{\'i}n, J.R. and Mart{\'i}nez-S{\'a}nchez, M. and Ahedo, E.},
+  title = {Bare wire anodes for electrodynamic tethers},
+  journal = {Journal of Propulsion and Power},
+  year = {1993},
+  volume = {9},
+  pages = {353--360}
+}
+
+@ARTICLE{ahed94a,
+  author = {Huller, S. and Ahedo, E.},
+  title = {Self-consistent plasma profile steepening in presence of laser light
+	with mixed polarization},
+  journal = {Physics of Plasmas},
+  year = {1994},
+  volume = {1},
+  pages = {4061--4075}
+}
+
+@ARTICLE{ahed95a,
+  author = {Ahedo, E. and Lapuerta, V.},
+  title = {Weakly three-dimensional model of spherical contactors in unmagnetized
+	plasmas},
+  journal = {Physics of Plasmas},
+  year = {1995},
+  volume = {2},
+  pages = {3252--3260}
+}
+
+@ARTICLE{ahed96,
+  author = {Ahedo, E.},
+  title = {Current-voltage response of anodic plasma contactors with external
+	ionization},
+  journal = {Physics of Plasmas},
+  year = {1996},
+  volume = {3},
+  pages = {3875--3884}
+}
+
+@ARTICLE{ahed97a,
+  author = {Ahedo, E.},
+  title = {Structure of the plasma-wall interaction in an oblique magnetic field},
+  journal = {Physics of Plasmas},
+  year = {1997},
+  volume = {4},
+  pages = {4419--4430}
+}
+
+@ARTICLE{ahed99a,
+  author = {Ahedo, E.},
+  title = {Plasma-wall interaction in an oblique magnetic field: Model of the
+	space-charge sheath for large potentials and small Debye-lengths},
+  journal = {Physics of Plasmas},
+  year = {1999},
+  volume = {6},
+  pages = {4200--4207}
+}
+
+@ARTICLE{ahed00e,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E.},
+  title = {Permanent spacecraft-ionosphere exchange currents},
+  year = {2000}
+}
+
+@ARTICLE{ahed01a,
+  author = {Ahedo, E. and Mart{\'i}nez-Cerezo, P. and Mart{\'i}nez-S{\'a}nchez,
+	M.},
+  title = {One-dimensional model of the plasma flow in a {Hall} thruster},
+  journal = {Physics of Plasmas},
+  year = {2001},
+  volume = {8},
+  pages = {3058--3068}
+}
+
+@ARTICLE{ahed01e,
+  author = {Ahedo, E. and Lapuerta, V.},
+  title = {Comparison of collisionless macroscopic models and application to
+	the ion-electron instability},
+  journal = {Physics of Plasmas},
+  year = {2001},
+  volume = {8},
+  pages = {3873--3878}
+}
+
+@ARTICLE{ahed02a,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R.},
+  title = {Analysis of bare-tether systems for deorbiting low-Earth-orbit satellites},
+  journal = {J. of Spacecraft and Rockets},
+  year = {2002},
+  volume = {39},
+  pages = {198--205},
+  number = {2}
+}
+
+@ARTICLE{ahed02b,
+  author = {Ahedo, E.},
+  title = {Radial macroscopic model of a plasma flowing along annular dielectric
+	walls},
+  journal = {Physics of Plasmas},
+  year = {2002},
+  volume = {9},
+  pages = {3178--3186},
+  number = {7}
+}
+
+@ARTICLE{ahed02c,
+  author = {Ahedo, E.},
+  title = {Presheath/sheath model of a plasma with secondary emission from two
+	parallel walls},
+  journal = {Physics of Plasmas},
+  year = {2002},
+  volume = {9},
+  pages = {4340--4347},
+  number = {10}
+}
+
+@ARTICLE{ahed02d,
+  author = {Ahedo, E. and Gallardo, J.M. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {Model of the plasma discharge in a {Hall} thruster with heat conduction},
+  journal = {Physics of Plasmas},
+  year = {2002},
+  volume = {9},
+  pages = {4061--4070},
+  number = {9}
+}
+
+@ARTICLE{ahed02l,
+  author = {Pel{\'a}ez, J. and L{\'o}pez-Rebollal, O. and Lara, M. and Ahedo,
+	E.},
+  title = {Dynamic stability of a bare tether as a deorbiting device},
+  journal = {Advances in the Astronautical Sciences},
+  year = {2002},
+  volume = {112},
+  pages = {1257--1274}
+}
+
+@ARTICLE{ahed03c,
+  author = {Ahedo, E. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {Response to Comment on {\textquoteright}One-dimensional model of
+	the plasma flow in a {Hall} thruster{\textquoteright}},
+  journal = {Physics of Plasmas},
+  year = {2003},
+  volume = {10},
+  pages = {1174},
+  number = {4}
+}
+
+@ARTICLE{ahed03d,
+  author = {Lapuerta, V. and Ahedo, E.},
+  title = {The electron-electron instability in a spherical plasma structure
+	with an intermediate double layer},
+  journal = {Physics of Plasmas},
+  year = {2003},
+  volume = {10},
+  pages = {1351--1363},
+  number = {5}
+}
+
+@ARTICLE{ahed03e,
+  author = {Ahedo, E. and Gallardo, J.M. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {Effects of the radial-plasma wall interaction on the axial {Hall}
+	thruster discharge},
+  journal = {Physics of Plasmas},
+  year = {2003},
+  volume = {10},
+  pages = {3397--3409},
+  number = {8}
+}
+
+@ARTICLE{ahed04a,
+  author = {Ahedo, E. and Escobar, D.},
+  title = {Influence of design and operation parameters on {Hall} thruster performances},
+  journal = {Journal of Applied Physics},
+  year = {2004},
+  volume = {96},
+  pages = {983--992},
+  number = {2}
+}
+
+@ARTICLE{ahed05b,
+  author = {Ahedo, E. and Parra, F.I.},
+  title = {Partial trapping of secondary electron emission in a {Hall} thruster
+	plasma},
+  journal = {Physics of Plasmas},
+  year = {2005},
+  volume = {12},
+  pages = {073503},
+  number = {7}
+}
+
+@ARTICLE{ahed05c,
+  author = {Ahedo, E. and Parra, F.I.},
+  title = {A model of the two-stage {Hall} thruster discharge},
+  journal = {Journal of Applied Physics},
+  year = {2005},
+  volume = {98},
+  pages = {023303}
+}
+
+@ARTICLE{ahed05d,
+  author = {Ahedo, E. and J.Rus},
+  title = {Vanishing of the negative anode sheath in a {Hall} thruster},
+  journal = {Journal of Applied Physics},
+  year = {2005},
+  volume = {98},
+  pages = {043306}
+}
+
+@article{ahed06a,
+  title={A two-dimensional hybrid model of the Hall thruster discharge},
+  author={Parra, FI and Ahedo, E and Fife, JM and Martinez-Sanchez, M},
+  journal={Journal of Applied Physics},
+  volume={100},
+  number={2},
+  year={2006},
+  publisher={AIP Publishing}
+}
+
+@ARTICLE{ahed06j,
+  author = {Ahedo, E. and Carralero, D.},
+  title = {Structure of a magnetized plasma confined between two dielectric
+	walls},
+  journal = {Bulletin American Physical Society},
+  year = {2006},
+  volume = {51},
+  pages = {346}
+}
+
+
+@ARTICLE{ahed07a,
+  author = {Ahedo, E. and Pablo, V.},
+  title = {Combined effects of electron partial thermalization and secondary
+	emission in {Hall} thruster discharges},
+  journal = {Physics of Plasmas},
+  year = {2007},
+  volume = {14},
+  pages = {083501}
+}
+
+
+@ARTICLE{ahed08a,
+  author = {Ahedo, E. and Escobar, D.},
+  title = {Two-region model for positive and negative plasma sheaths and its
+	application to {Hall} thruster metallic anodes},
+  journal = {Physics of Plasmas},
+  year = {2008},
+  volume = {15},
+  pages = {033504}
+}
+
+@Article{parr06a,
+  Title                    = {A two-dimensional hybrid model of the {H}all thruster discharge},
+  Author                   = {Parra, F. I. and Ahedo, E. and Fife, J. M. and Mart{\'i}nez-S{\'a}nchez, M.},
+  Journal                  = {Journal of Applied Physics},
+  Year                     = {2006},
+  Number                   = {2},
+  Pages                    = {023304},
+  Volume                   = {100},
+  Publisher                = {AIP Publishing, Melville, {NY}}
+}
+
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ------------------------ CONFERENCES SECTION ------------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+%----------------------------------------------------------------------
+% -------------------------- 2024 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@inproceedings{perr24a,
+  title= {Direct thrust measurements of a 200 W Cylindrical Hall Thruster},
+  author= {Tatiana Perrotin and Pablo Fajardo and Jaume Navarro-Cavallé},
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-747},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@inproceedings{mont24,
+  title= {Design, assembly and validation test of a sub-1Amp LaB6 hollow cathode},
+  author= {Antonio Montero Barriga and Tatiana Perrotin and Jaume Navarro-Cavallé and Xin Chen},
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-805},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@inproceedings{jime24c,
+  title={An Implicit Energy- and Charge-conserving Electromagnetic PIC algorithm for Paraxial Magnetic Nozzles},
+  author={P. Jim\'enez  and  M. Merino and L. Chac\'on},
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-378},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@inproceedings{barq24b,
+  title={Cross-sectional characterization of the exhaust of a Pulsed Plasma Thruster },
+  author={S. Barquero    and J. Navarro-Cavall\'e and M. Merino},
+ booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-387},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@article{barq24c,
+    author = {},
+    title = {},
+    journal = {},
+    year = {}
+} 
+
+@InProceedings{bayo24b,
+  title={Data-driven analysis of a 2D-ExB kinetic simulation relevant to Hall thruster discharges},
+  author={Borja Bay\'on-Buj\'an and Enrique Bello-Benítez and Jiewei Zhou and Mario Merino},
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-640},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@InProceedings{boye24b,
+  title={Determining ion velocity in the interconnected plume of a cluster of two ECRTs using 2D LIF},
+  author={Boy\'e C\'elian and Jaume Navarro-Cavall\'e and Mario Merino and Alexis Lecervoisier and St\'ephane Mazouffre},
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-717},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@InProceedings{madd24a,
+  title={Experimental characterization of oscillations in the Magnetic Nozzle of an Electron Cyclotron Resonance Thruster},
+  author={Davide Maddaloni and Federico Boni and Victor D\'esangles and Borja Bay\'on-Buj\'an and Mario Merino and Filippo Terragni},
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-387},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@InProceedings{mari24b,
+  title={Kinetic electron effects in a {H}all thruster discharge with a curved magnetic field topology},
+  author= amc # and # ebb # and # ea # and # adv,
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-387},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+@InProceedings{cuer24,
+  title={Towards self-consistent simulation of radial effects on an axial PIC model of the Hall discharge},
+  author= gcl # and # ebb # and # amc # and # ea,
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-699},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+@InProceedings{inch24b,
+  title={Simulation of the discharge and microwave-plasma coupling in a waveguide ECR thruster},
+  author= mi # and # pj # and # jz # and # mm # and # jn,
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-592},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@InProceedings{guai24a,
+  title={A Full {PIC} Study of the Neutralization of the {RIT10-EVO}’s Plasma Beam},
+  author= mg # and # amc # and # mm # and # ea # and # fac # and # kd ,
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-472},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@InProceedings{guai24b,
+  title={Hybrid PIC-Fluid Simulations of the Plasma Expansion Through a Magnetic Arch},
+  author= mg # and # mm # and # ea,
+  booktitle = iepc38,
+  year = {2024},
+  number = {IEPC-2024-471},
+  address = {Toulouse, France, June 23-28},
+  publisher = erps,
+}
+
+@inproceedings{pera24b,
+    author = jpd # and # adv # and # ea,
+    title = {Simulations of a magnetically-shielded Hall effect thruster with conducting walls},
+    booktitle = iepc38,
+    year = {2024},
+    number = {IEPC-2024-571},
+    address = {Toulouse, France, June 23-28},
+    publisher = erps,
+}
+
+@inproceedings{ripo24a,
+    author = mri # and # mm # and # ea,
+    title = {Analysis of Drift Instabilities in Magnetic Nozzles},
+    booktitle = iepc38,
+    year = {2024},
+    number = {IEPC-2024-506},
+    address = {Toulouse, France, June 23-28},
+    publisher = erps,
+}
+
+@inproceedings{zhou24a,
+    author = {J. Zhou and E. Ahedo and F. Cichocki and F. Taccogna and P. Minelli},
+    title = {The impact of stepwise ionization in a Xe fed electrodeless plasma thruster operation},
+    booktitle = iepc38,
+    year = {2024},
+    number = {IEPC-2024-255},
+    address = {Toulouse, France, June 23-28},
+    publisher = erps,
+}
+
+@inproceedings{dall24,
+    author = {S. Dalle Fabbriche and J. Zhou and J. Perales-D\'{i}az and E. Ahedo and K. Holste},
+    title = {Analysis of the plasma discharge in a radio-frequency ion thruster chamber},
+    booktitle = iepc38,
+    year = {2024},
+    number = {IEPC-2024-329},
+    address = {Toulouse, France, June 23-28},
+    publisher = erps,
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2023 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@inproceedings{jime23c,
+    author = {Pedro Jim\'enez and Luis Chac\'on and Mario Merino},
+    title = {Implicit conservative particle-in-cell  kinetic simulations of magnetic nozzles},
+    booktitle = {IEEE International Conference on Plasma Science},
+    year = {2023},
+    address = {Santa Fe, New Mexico (US), May 21–25}
+}
+
+@inproceedings{meri23d,
+    author = {Mario Merino and C\'elian Boy\'e and Diego Garc\'ia-Lahuerta and Jaume Navarro-Cavall\'e and Eduardo Ahedo},
+    title = {Experiments and simulations of a magnetic arch plasma expansion for space propulsion},
+    booktitle = {IEEE International Conference on Plasma Science},
+    year = {2023},
+    address = {Santa Fe, New Mexico (US), May 21–25}
+}
+
+@inproceedings{bayo23,
+    author = {Bayón, Borja and Merino, Mario},
+    title = {Data-driven Identification of the Breathing Mode governing equations},
+    booktitle = icpig35,
+    year = {2023},
+    address = {Egmond aan Zee, The Netherlands, July 9–14}
+}
+ 
+@inproceedings{madd23,
+    author = {Maddaloni, Davide and Navarro-Cavall\'e, Jaume and Merino, Mario and Terragni, Filippo},
+    title = {Experimental investigation of oscillations in a magnetic nozzle},
+    booktitle = icpig35,
+    year = {2023},
+    address = {Egmond aan Zee, The Netherlands, July 9–14}
+}
+
+@inproceedings{garc23a,
+  title={Simulations of the effect of neutral dynamics in magnetic nozzle expansions},
+  author={Diego Garc\'ia-Lahuerta and Mario Merino and Eduardo Ahedo},
+  booktitle = gec76,
+  year={2023},
+  address = {Ann Arbor, MI, October 9-13}
+}
+
+
+@inproceedings{meri23c,
+  title={Oscillations and instabilities in a propulsive magnetic nozzle},
+  author={Merino, Mario and Maddaloni, Davide and Ripoli, Matteo and Navarro-Cavall{\'e}, Jaume and Terragni, Filippo and Ahedo, Eduardo},
+  booktitle = gec76,
+  year={2023},
+  address = {Ann Arbor, MI, October 9-13}
+}
+
+@inproceedings{meri23b,
+  title={Data-driven analysis techniques for plasma space propulsion: experiments and simulations},
+  author={Mario Merino and Davide Maddaloni and Borja Bayón Buján and Filippo Terragni and Jaume Navarro-Cavall\'e},
+  booktitle = {PLASMA 2023 (invited talk)},
+  year={2023},
+  address = {Warsaw, Poland, September 18--22}
+}
+
+@InProceedings{mari23a,
+  title={Macroscopic response of a {H}all thruster discharge from an axial-radial {PIC} model},
+  author= amc # and # ebb # and # adv # and # ea,
+  booktitle = gec76,
+  year = {2023},
+  address = {Ann Arbor, MI, October 9-13}
+}
+
+@InProceedings{guai23a,
+  title={A Quasi-Neutral Full {PIC} Model for the Study of Electron Thermodynamics in a Plasma Thruster Plume},
+  author = mg # and # amd # and # mm # and # ea,
+  booktitle = gec76,
+  year = {2023},
+  address = {Ann Arbor, MI, October 9-13}
+}
+
+@inproceedings{barq23b,
+  title={Alternative propellant study (krypton vs. xenon) of the $\mu$10 ECR Gridded Ion Thruster at its Hayabusa2 and DESTINY$^+$ Missions},
+  author={S. Barquero and K. Tabata and R. Tsukizaki and M. Merino and J. Navarro-Cavall\'e and K. Nishiyama},
+  booktitle={34th ISTS Conference},
+  year={2023}
+}
+
+@inproceedings{boye23,
+  title={Preliminary analysis of the magnetic arch plasma expansion in a cluster of two {ECR} plasma thrusters},
+  author={Boy{\'e}, C{\'e}lian and Navarro-Cavall{\'e}, Jaume and Merino-Martinez, Mario},
+  booktitle={10th EUCASS Conference},
+  year={2023},
+  address = {Lausanne, Switzerland, July 9–13}
+}
+
+@inproceedings{barq23c,
+  title={Time-Resolved Reconstruction of the Plume of a Pulsed Plasma Thruster (PPT)},
+  author={S. Barquero and M. Merino and J. Navarro-Cavall\'e},
+  booktitle={10th EUCASS Conference},
+  year={2023},
+  address = {Lausanne, Switzerland, July 9–13}
+} 
+
+@inproceedings{inch23b,
+  title={Faraday Cup Design for Electrodeless Plasma Thrusters},
+  author={M. Inchingolo and J. Navarro-Cavall\'e},
+  booktitle={10th EUCASS Conference},
+  year={2023},
+  address = {Lausanne, Switzerland, July 9–13}
+} 
+
+@inproceedings{perr23a,
+  title={Measurements of xenon ions and atoms velocity in Cylindrical Hall Thruster with Laser-Induced Fluorescence spectroscopy},
+  author= {Perrotin, T. and Vinci, A. E. and Mazouffre, S. and Navarro-Cavall\'e, J. and Fajardo, P. and Ahedo, E.},
+  booktitle={10th EUCASS Conference},
+  year={2023},
+  doi = {10.13009/EUCASS2023-706},
+  address = {Lausanne, Switzerland, July 9–13}
+}
+
+@unpublished{garr23,
+    title={Benchmark of particle-in-cell simulations of a {P}enning-type discharge: {P}reliminary results},
+    author= {L. Garrigues and G. Fubiani and J.P. Boeuf and A.T. Powis and W. Villafana and I. Kaganovich and Y. Raitses and F. Petronio and A. Alvarez-Laguna and A. Bourdon and P. Chabert and G. Vigot and G. Bogopolsky and B. Cuenot and O. Vermorel and D. Sydorenko and  M. Zadeh and A. Smolyakov and  F. Cichocki and  P. Minelli and F. Taccogna and D. Eremin and L. Xu and A. Denig and K. Hara and P. Q. Elias and E. Bello Benítez and A. Marín-Cebrián and E. Ahedo and M. Merino and P. Fajardo and  Z. Donko and P. Hartmann and M. Turner and M. Reza and F. Faraji and A. Knoll and P. Parodi and and T. Magin},
+    note = {Poster presented in $35^{th}$  \textit{International Conference on Plasmas and Ionized Gases}. Egmond aan Zee, The Netherlands, July 9–14}
+}
+
+
+
+@INPROCEEDINGS{nava23x,
+    author = {J. Navarro-Cavall{\'e} and M.R. Inchingolo and T. Perrotin and  S. Barquero and P. Fajardo and M. Merino and E. Ahedo},
+    title = {Experimental activities at the  Plasma and Space Propulsion Team  (EP2‐UC3M)},
+    booktitle = {EPIC Workshop, Naples, May 9-12},
+    year = {2023}
+}
+
+
+%----------------------------------------------------------------------
+% -------------------------- 2022 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@inproceedings{gomez22,
+  title={Direct thrust measurements of the HIPATIA system thruster unit},
+  author={G{\'o}mez, V. and Wijnen, M. and Navarro-Cavall{\'e}, J.},
+  booktitle={37th International Electric Propulsion Conference},
+  year={2022}
+}
+
+@article{gomez22_bis,
+  title={Direct thrust measurements of the HIPATIA system thruster unit},
+  author={G{\'o}mez, V. and Wijnen, M. and Navarro-Cavall{\'e}, J.},
+  year={Paper IEPC-2022-491, June 2022}
+}
+
+@inproceedings{ruiz22,
+  title={Results of the first Helicon Plasma Thruster (HPT) coupling test campaign within the HIPATIA project},
+  author={Ruiz, M and Velasco, A and G{\'o}mez, V and Navarro-Cavall{\'e}, J and Dickeli, G and Vinci, A and Mazouffre, St{\'e}phane and Gorbachev, S and Hildebrand, N},
+  booktitle={37th International Electric Propulsion Conference},
+  year={2022}
+}
+
+
+@InProceedings{poli22,
+author =  {Poli, D. and Bello-Ben\'itez, E. and Fajardo, P. and Ahedo, E.} ,
+title = {Non Stationary Fluid Modelling of Plasma Discharge in {Hall} Thrusters},
+booktitle = spc22,
+number  = {116}, 
+URL = {available at https://ep2.uc3m.es},
+year = {2022}
+}
+
+@InProceedings{bell22b,
+author =  {Tsikata, S. and Jorns, B. and Smolyakov, A. and Wang, L. and Mikellides, Y. and Bello-Ben\'itez, E. and Hara, K.},
+title = {Session 1: High-frequency, small-scale oscillations and turbulence},
+booktitle = {{ExB} plasmas Workshop},
+address = {Madrid, Spain, February 16-18},
+year = {2022}
+}
+
+@InProceedings{bell22a,
+author =  {Bello-Ben\'itez, E. and Ahedo, E.},
+title = {Axial equilibrium model of the {H}all discharge and its far plume with electron inertia and other effects},
+booktitle = {{ExB} plasmas Workshop},
+address = {Madrid, Spain, February 16-18},
+year = {2022}
+}
+
+@InProceedings{mari22a,
+author =  amc # and # adv # and # pf # and # ea,
+title = {Oblique magnetic field effect on radial plasma dynamics},
+booktitle = {{ExB} plasmas Workshop},
+URL = {https://exbworkshop.ep2.uc3m.es/},
+address = {Madrid, Spain, February 16-18},
+year = {2022}
+}
+
+@InProceedings{mari22b,
+author =  amc # and # adv # and # pf # and # ea,
+title = {Session 5: Plasma-wall interaction. Kinetic modeling of electron-wall interaction},
+booktitle = {{ExB} plasmas Workshop},
+URL = {https://exbworkshop.ep2.uc3m.es/},
+address = {Madrid, Spain, February 16-18},
+year = {2022}
+}
+
+@InProceedings{mode22c,
+author =  amd # and # fc # and # ea,
+title = {Comparison between 3D Magnetized Plasma Plume Solutions obtained with full FD and hybrid FV-FD schemes},
+booktitle = {{ExB} plasmas Workshop, Young researchers "poster" mini-session},
+address = {Madrid, Spain, February 16-18},
+year = {2022}
+}
+
+@InProceedings{mode22e,
+author =  amd # and # jz # and # ea,
+title = {3D hybrid PIC-fluid code for plasma thruster plumes interaction with ground facility},
+booktitle = {29th Spacecraft Plasma Interaction Network in Europe (SPINE) meeting},
+address = {IRF Kiruna, Sweden, November 30 - December 2},
+year = {2022}
+}
+
+@InProceedings{mode22a,
+author =  amd # and # jz # and # fc # and # adv # and # ea,
+title = {Simulation of the expansion within a vacuum chamber of the plume of a Hall thruster with a centrally mounted cathode},
+booktitle = spc22,
+publisher = aaaf,
+number  = {00155},
+address = {May 9-13},
+year = {2022}
+}
+
+@InProceedings{mode22b,
+author =  amd # and # fc # and # jz # and # ea,
+title = {A 3{D} electron fluid model with energy balance for plasma plumes},
+booktitle = {IEPC 2022},
+address = {Boston, Massachusetts, United States, June 19-23},
+year = {2022}
+}
+
+@InProceedings{jime22b,
+author =  pj # and # mm # and # ea,
+title = {Wave propagation and absorption in
+a Helicon plasma thruster source,
+plume and surroundings},
+booktitle = {{ExB} Plasmas Workshop, Young researchers "poster" mini-session},
+address = {Madrid, Spain, February 16-18},
+year = {2022}
+}
+
+@InProceedings{jime22c,
+author =  mm # and # pj # and # cb # and # mi # and # jn # and # jz # and # ea,
+title = {Radiofrequency Plasma Heating For
+Electrodeless Space Thruster Applications},
+booktitle = {The 56th Annual Microwave Power Symposium},
+address = {Savannah, GA, June 15-17},
+year = {2022},
+publisher = {International Microwave Power Institute (IMPI)},
+}
+
+@InProceedings{jime22d,
+author =  pj # and # jz # and # pf # and # mm # and # ea,
+title = {Numerical Simulations of the Discharge and the Plasma-wave Interaction in a Helicon Plasma Thruster},
+booktitle = iepc37,
+address = {Boston, MA, June 19-23},
+number = {IEPC-2022-498},
+year = {2022},
+publisher = erps,
+}
+
+@InProceedings{pera22a,
+author =  {Perales-D\'iaz, J. and Dom\'inguez-V\'azquez, A. and Fajardo, P. and Ahedo, E. and Faraji, F. and Reza, M. and Andreussi, T.},
+title = {Hybrid plasma simulations of
+the {HT}5k thruster},
+booktitle = {{ExB} Plasmas Workshop, Young researchers "poster" mini-session},
+address = {Madrid, Spain, February 16-18},
+year = {2022}
+}
+
+@InProceedings{pera22c,
+author =  {Perales-D\'iaz, J. and Dom\'inguez-V\'azquez, A. and Fajardo, P. and Ahedo, E. and Andreussi, T. and Piragino, A.},
+title = {Hybrid 2{D} plasma simulations of
+a 20k{W}-class magnetically shielded {H}all effect thruster},
+booktitle = iepc37,
+address = {Boston, MA, USA, June 19-23},
+number = {IEPC-2022-322},
+year = {2022},
+publisher = erps,
+}
+
+@InProceedings{domi22a,
+  title={Analysis of the electron downstream boundary conditions in a 2{D} hybrid code for {Hall} thrusters},
+  author=adv # and # jz # and # asg # and # pf # and # ea,
+  booktitle = iepc37,
+  year = {2022},
+  number = {IEPC-2022-338},
+  address = {Boston, MA, USA, June 19-23},
+  publisher = erps,
+}
+
+@InProceedings{meri22b,
+  title={Preliminary model of the plasma expansion in a magnetic arch thruster (and overview of the first prototype)},
+  author={Mario Merino and Diego Garc\'ia-Lahuerta and C\'elian Boy\'e and Jaume Navarro-Cavall\'e and Eduardo Ahedo},
+  booktitle = iepc37,
+  year = {2022},
+  number = {IEPC-2022-423},
+  address = {Boston, MA, June 19-23},
+  publisher = erps,
+}
+
+@InProceedings{mari22c,
+  title={Effect of the magnetic field angle on {Hall} thruster plasma-wall interaction},
+  author= amc # and # adv # and # pf # and # ea,
+  booktitle = iepc37,
+  year = {2022},
+  number = {IEPC-2022-287},
+  address = {Boston, MA, June 19-23},
+  publisher = erps,
+}
+
+@InProceedings{bell22c,
+  title={Two-dimensional kinetic simulation of electrostatic instabilities in a {H}all plasma},
+  author= {Bello-Ben\'itez,E. and Mar\'in-Cebri\'an, A. and Ramos,J. J. and Ahedo,E.}, 
+  booktitle = iepc37,
+  year = {2022},
+  number = {IEPC-2022-314},
+  address = {Boston, MA, June 19-23},
+  publisher = erps,
+}
+
+@InProceedings{perr22a,
+  title={Characterization of a low power Cylindrical Hall Thruster},
+  author={Tatiana Perrotin and Alfio Emanuele Vinci and St\'ephane Mazouffre and Jaume Navarro-Cavall\'e and Pablo Fajardo and Eduardo Ahedo},
+  booktitle = iepc37,
+  year = {2022},
+  number = {IEPC-2022-359},
+  address = {Boston, MA, June 19-23},
+  publisher = erps,
+}
+
+@InProceedings{inch22a,
+  author = {Marco Inchingolo and Jaume Navarro-Cavall\'e and Mario Merino},
+  title = {Direct Thrust Measurements of a circular waveguide Electron Cyclotron Resonance Thruster},
+  booktitle = iepc37,
+  year = {2022},
+  number = {IEPC-2022-338},
+  address = {Boston, MA, June 19-23},
+  publisher = erps,
+}
+
+
+@InProceedings{barq22a,
+author = {Scherezade Barquero and Mario Merino  and Jaume Navarro-Cavall\'e},
+  title = {Experimental plume characterization of a low-power Ablative
+Pulsed Plasma Thruster {(APPT)}},
+  booktitle = iepc37,
+  year = {2022},
+  number = {IEPC-2022-556},
+  address = {Boston, MA, June 19-23},
+  publisher = erps,
+}
+ 
+
+%----------------------------------------------------------------------
+% -------------------------- 2021 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@InProceedings{mont21,
+author =  {Jorge Monteiro and Anna Guerman and Thibault Gateau and Filippo Cichocki and Mario Merino and Jose Garcia-Souto and Julio Posada and Paulo Oliveira and Anthony Ghiotto and Javier Cubas and Elena Roib\'as and Olivier Marty and  Maude Perier-Camby and Marco Romero and Muriel Bernard},
+title = {Nanostar Project: Student Challenges and Tools -- Developing Collaborative Tools For Nanosatellite Education And Capacity Building},
+booktitle = {International Astronautical Congress}, 
+number = {IAC-21,E1,8,4,x64267},
+year = {2021}
+} 
+ 
+@InProceedings{mari21c,
+author =  {Mar\'in-Cebri\'an, A. and Bello-Ben\'itez, E. and Dom\'inguez-V\'azquez, A. and Cichocki, F. and Fajardo, P. and Ahedo, E.},
+title = {Advances in full particle-in-cell codes for 2D plasma discharge simulations},
+booktitle = {{IEPC Summer 2021 Virtual Events}},
+address = {July 9-16},
+year = {2021}
+}
+
+@InProceedings{bell21b,
+author =  {Bello-Ben\'itez, E. and Ahedo, E.},
+title = {Advances on low-dimensionality fluid modelling of {H}all thruster discharges},
+booktitle = spc21,
+publisher = aaaf,
+number  = {paper 133},
+address = {March 17-19},
+year = {2021}
+}
+
+@InProceedings{barq21a,
+author =  {Scherezade Barquero and Mario Merino and Jaume Navarro-Cavall\'e},
+title = {Design of an experimental ablative pulsed plasma thruster for micropropulsion},
+booktitle = spc21,
+publisher = aaaf,
+number  = {00254},
+address = {March 17-19},
+year = {2021}
+}
+
+@InProceedings{mari21a,
+author =  amc # and # adv # and # pf # and # ea,
+title = {Radial particle-in-cell simulations of a {H}all {T}hruster discharge with different anomalous transport models},
+booktitle = spc21,
+publisher = aaaf,
+number  = {00297},
+address = {March 17-19},
+year = {2021}
+}
+
+@InProceedings{mode21a,
+author =  amd # and # fc # and # ea,
+title = {Assessment of Numerical Diffusion Effects in Magnetized Plasma Plume Simulations},
+booktitle = spc21,
+number  = {paper 306, available at https://ep2.uc3m.es},
+year = {2021} 
+}
+
+@InProceedings{inch21a,
+author =  mi # and # mm # and # jn,
+title = {Hybrid PIC-Fluid Simulation of a Waveguide ECR Magnetic Nozzle Plasma Thruster},
+booktitle = spc21,
+publisher = aaaf,
+number  = {00192},
+address = {March 17-19},
+year = {2021}
+}
+
+@InProceedings{jime21a,
+author = pj # and # mm # and # ea,
+title={Preliminary investigation of the electromagnetic fields in the far plume of a Helicon Plasma Thruster},
+booktitle = spc21,
+publisher = aaaf,
+number  = {00331},
+year = {2021}
+}
+
+@inProceedings{pera21a,
+  title = {Characterization of a 5kW-class Hall thruster via 2D hybrid simulations},
+  author= {Perales-D\'iaz, Jes\'us and Dom\'inguez-V\'azquez, Adri\'an and Fajardo, Pablo and Ahedo, Eduardo and Faraji, Farbod and Maryam, Reza and Andreussi, Tommaso},
+  booktitle = {Space Propulsion Conference 2021},
+  publisher = aaaf,
+  year = {2021},
+  number = {00391},
+}
+
+@InProceedings{perr21a,
+author =  tp # and # adv # and # jn # and # pf # and # ea,
+title = {Design and preliminary study of a 200W Cylindrical Hall Thruster},
+booktitle = spc21,
+publisher = aaaf,
+number  = {00090},
+address = {March 17-19},
+year = {2021}
+}
+
+@InProceedings{zhou21b,
+  title={Performance analysis of alternative propellants for a helicon plasma thruster},
+  author={Zhou, J. and Taccogna, F. and Fajardo, P. and Ahedo, E.},
+  booktitle=spc21,
+  number={00191},
+  year={2021}
+}
+
+
+@InProceedings{madd21,
+author = dm # and # adv # and # {Filippo Terragni} # and # mm,
+title = {Data-driven analysis of breathing mode and ion-transit mode in 2D hybrid Hall thruster simulations},
+booktitle = {AIAA Propulsion and Energy 2021 Forum},
+doi = {10.2514/6.2021-3398},
+address = {August 9-11},
+year = {2021}
+}
+
+@InProceedings{svil21b,
+author =  asv # and # mm # and # ea,
+title = {A numerical parametric investigation on the optimal design and operation of coaxial {ECR} thrusters},
+booktitle = spc21,
+publisher = aaaf,
+number  = {00396},
+address = {March 17-19},
+year = {2021}
+}
+
+@INPROCEEDINGS{perr21b,
+  author = tp # and # pf # and # ea,
+  title = {Development of a low-power Cylindrical Hall Thruster },
+  booktitle = {5$^{th}$ International Workshop on Micropropulsion and CubeSats},
+  year = {2021},  
+  address = {Toulouse (online)}
+}
+
+@INPROCEEDINGS{barq21b,
+  author = {Scherezade Barquero and Mario Merino and Jaume Navarro-Cavall\'e},
+  title = {Preliminary test campaign of an ablative pulsed plasma
+thruster for micropropulsion},
+  booktitle = {5$^{th}$ International Workshop on Micropropulsion and CubeSats},
+  year = {2021},  
+  address = {Toulouse (online)}
+}
+
+@INPROCEEDINGS{inch21b,
+  author = {Marco Inchingolo and Jaume Navarro-Cavall\'e and Mario Merino},
+  title = {Design and Plume Characterization of a Low-Power Circular Waveguide Coupled ECR Thruster},
+  booktitle = {5$^{th}$ International Workshop on Micropropulsion and CubeSats},
+  year = {2021},  
+  address = {Toulouse (online)}
+}
+
+
+
+
+
+%----------------------------------------------------------------------
+% -------------------------- 2020 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@INPROCEEDINGS{sara20,
+  author={Sergio Sarasola and Carlos \'Alvaro Arroyo and Ra\'ul G\'omez and Vicente Gonz\'alez and Miguel Renieblas and V\'ictor Ribera and Paula Prado and Ignacio Melgar and Francesco Cacciatore and Filippo Cichocki and Mario Merino and Manuel Sanjurjo and M.A. Mendoza-B\'arcenas and R. Prieto-Mel\'endez},
+  booktitle={2020 Congreso Nacional de Actividades Espaciales (CONACES), Mexico}, 
+  title={Diseño preliminar de la misi\'on espacial TEPEU-1}, 
+  year={2020},
+  volume={},
+  number={}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2019 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@INPROCEEDINGS{ahed19z,
+  author={E. {Ahedo} and P. {Fajardo} and M. {Merino} and J. {Navarro-Cavall\'e} and A. {S\'anchez-Villar} and M. {Wijnen} and J. {Zhou}},
+  booktitle={2019 International Conference on Electromagnetics in Advanced Applications (ICEAA)}, 
+  title={Helicon and ECR plasma sources for space propulsion: simulation and testing}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={0788-0793}
+}
+
+@INPROCEEDINGS{pack19,
+  title={{H}2020 {MINOTOR}: Magnetic nozzle electron cyclotron resonance thruster},
+  author= {Danis Packan and Paul-Quentin Elias and Julien Jarrige and Theo Vialis
+  and Sara Correyero and Simon Peterschmitt and J.C. Porto-Hernandez and
+  Mario Merino and \'Alvaro S\'anchez-Villar and Eduardo Ahedo and G. Peyresoubes and A. Thorinius and S. Denis and Kristoff Holste and Peter Klar and S. Scharmann and J. Zorn and M. Bekemans and T. Scalais and E. Bourguignon and S. Zurbach and
+  P. Azais and I. Habbassi and Magali Mares and Andy Hoque},
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-875},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{gomez19,
+  title={RF Power-Plasma Coupling Experimental Results in a Helicon Plasma Thruster Prototype},
+  author= {G\'omez, V. and Gim\'enez, A. and Ruiz, M. and Navarro-Cavall\'e, J. and Fajardo, P. and Wijnen, M. and Ahedo, E.},
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-365},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@article{gomez19_bis,
+  title={RF Power-Plasma Coupling Experimental Results in a Helicon Plasma Thruster Prototype},
+  author={G\'omez, V. and Gim\'enez, A. and Ruiz, M. and Navarro-Cavall\'e, J. and Fajardo, P. and Wijnen, M. and Ahedo, E.},
+  year={Paper IEPC-2019-365, Sept. 2019}
+}
+
+@INPROCEEDINGS{cich19b,
+  title={3{D} simulations of a magnetized {H}all {E}ffect thruster plume},
+  author= fc # and # adv # and # mm # and # ea,
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-460},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{domi19b,
+  title={Analysis of the plasma discharge in a {Hall} thruster via a hybrid {2D} code},
+  author = {A. Dom{\'i}nguez-V{\'{a}}zquez and J. Zhou and P. Fajardo and E. Ahedo},
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-579},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{mari19,
+  title={Simulation of radial electron dynamics in a {Hall} effect thruster},
+  author = amc # and # adv # and # pf # and # ea,
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-593},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{zhou19b,
+  title={Numerical {S}imulations of the {P}lasma Discharge in a {Helicon} {P}lasma {T}hruster},
+  author= jz # and # pj # and # mm # and # pf # and # ea,
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-330},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{nava19,
+  title={Development and Characterization of the Helicon Plasma Thruster Prototype HPT05M},
+  author=jn # and # mw # and # pf # and # ea # and # {V. G\'omez} # and # {A. Gim\'enez} # and #  {M. Ruiz},
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-596},
+  address = {Vienna, Austria},
+  publisher = erps  
+}
+@article{nava19_bis,
+  title={Development and Characterization of the Helicon Plasma Thruster Prototype HPT05M},
+  author=jn # and # mw # and # pf # and # ea # and # {V. G\'omez} # and # {A. Gim\'enez} # and #  {M. Ruiz},
+  year={Paper IEPC-2019-596. Sept. 2019}
+}
+
+@INPROCEEDINGS{svil19a,
+  title={{PIC}/fluid/wave {S}imulations of the {P}lasma {D}ischarge in an {ECR} {P}lasma {T}hruster},
+  author=asv # and # jz # and # mm # and # ea,
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-633},
+  address = {Vienna, Austria},
+  publisher = erps  
+}
+
+@INPROCEEDINGS{nuez19a,
+  title = {Fluid-kinetic propulsive magnetic nozzle model in the fully magnetized limit},
+  author= {Judit Nuez and Mario Merino and Eduardo Ahedo},
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-254},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{corr19b,
+  title = {Effect of the initial VDFs in magnetic nozzle expansions},
+  author= {Sara Correyero and Mario Merino and Eduardo Ahedo},
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-818},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{bell19a,
+  title = {Axial-azimuthal high-frequency instability modes in a {Hall} thruster fluid model},
+  author= {Enrique Bello-Ben\'itez and Eduardo Ahedo},
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-687},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{pera19a,
+  title = {Studying the formation and neutralization of an ion thruster plume with EP2PLUS},
+  author= {Jes\'us Perales-D\'iaz and Filippo Cichocki and Mario Merino and Eduardo Ahedo},
+  booktitle = iepc36,
+  year = {2019},
+  number = {IEPC-2019-491},
+  address = {Vienna, Austria},
+  publisher = erps,
+}
+
+@INPROCEEDINGS{meri19b,
+  title = {Synergies between space plasma propulsion and magnetic confinement plasma fusion: PROMETEO project},
+  author= {Mario Merino and \'Alvaro S\'anchez and Adri\'an Dom\'inguez and Enrique Bello and Pedro Jim\'enez and Marco Inchingolo and Jaume Navarro and Filippo Cichocki and Pablo Fajardo and Eduardo Ahedo and Carlos Hidalgo and Boudewijn van Milligen and Francisco Tabar\'es and Iv\'an Calvo and J.L. Velasco and \'Alvaro Cappa and Eduardo de la Cal},
+  booktitle = {XXXVII Reuni\'on Bienal de la Real Sociedad Española de F\'isica},
+  year = {2019},
+  address = {Zaragoza},
+  publisher = {RSEF}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2018 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@INPROCEEDINGS{meri18e,
+  title = {Kinetic electron response in a rarefied plasma jet expanding into vacuum (invited talk)},
+  author = mm # and # jm # and # ea,
+  booktitle = escampig24,
+  year = {2018},
+  publisher = eps,
+  address = {Glasgow, UK}
+}
+
+@InProceedings{domi18b,
+author = {A. Dom{\'i}nguez-V{\'{a}}zquez and F. Taccogna and P. Fajardo and E. Ahedo},
+title = {Influence of relevant parameters on the radial {PIC} simulation of a {H}all effect thruster discharge},
+booktitle = spc18,
+publisher = aaaf,
+number  = {00288},
+address = {Seville, Spain, May 14-18},
+year = {2018}
+}
+
+@InProceedings{domi18d,
+author = {A. Dom{\'i}nguez-V{\'{a}}zquez and P. Fajardo and E. Ahedo and F. Taccogna},
+author =  adv # and # pf # and # ea # and # ft,
+title = {{N}on-{M}axwellian electron {VDF} features in a {H}all thruster chamber},
+booktitle = {{ExB} workshop},
+address = {New Jersey, USA, November 1-2},
+year = {2018}
+}
+
+@InProceedings{cich18b,
+ author    = fc # and # mm # and # ea,
+ title     = {A 3D electron fluid model to study magnetic field effects on an expanding plasma thruster plume},
+ booktitle = spc18,
+ year      = {2018},
+ series    = {00295},
+ publisher = aaaf,
+ address   = {Seville, Spain, May 14-18}
+}
+
+@INPROCEEDINGS{meri18c,
+  author = mm # and # {Jose Antonio Garc\'ia-Souto and Gr\'egory Pradels and Fabienne Daveran and Anthony Ghiotto and Eric Kerherve and B\'en\'edicte Escudier and Thibault Gateau and Nicolas Roche and Muriel Bernard and Laurent Dusseau and Eugenio Font\'an and Gustavo Alonso and Anna Guerman and Fernando Charrua-Santos and Luis Braga da Costa Campos},
+  title = {{NanoStar} University Network: Hands-on higher Aerospace Education through Nanosatellite Student Challenges},
+  booktitle = {2$^{nd}$ Symposium on Space Educational Activities},
+  year = {2018},  
+  address = {Budapest, Hungary},
+  publisher = aaaf  
+}
+
+@INPROCEEDINGS{svil18,
+  author = asv # and # mm,
+  title = {Advances in Wave-Plasma Modelling in {ECR} Thrusters},
+  booktitle = spc18,
+  year = {2018}, 
+  number = {00346},
+  address = {Seville, Spain},
+  publisher = aaaf
+}  
+
+@INPROCEEDINGS{zhou18a,
+    author =  {J. Zhou} # and # {A. Dom\'inguez-V\'azquez}  # and # {D. P\'erez-Grande} # and # {P. Fajardo} # and # {E. Ahedo},
+  title = {An axisymmetric hybrid model for the plasma transport in a helicon plasma thruster},
+  booktitle = spc18,
+  year = {2018},
+  number = {00308},
+  address = {Seville, Spain},
+  publisher = aaaf
+}
+
+@INPROCEEDINGS{zhou18b,
+  author =  {J. Zhou} # and # {G. S\'anchez-Arriaga} # and # {E. Ahedo} # and # {M. Mart\'inez-S\'anchez} # and # {J.J. Ramos},
+  title = {Collisional effects in non-stationary plasmas expansions along convergent-divergent magnetic nozzles},
+  booktitle = spc18,
+  year = {2018},
+  series = {00332},
+  address = {Seville, Spain},
+  publisher = aaaf
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2017 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@INPROCEEDINGS{corr17,
+  title={Measurement of anisotropic plasma properties along the magnetic nozzle expansion of an Electron Cyclotron Resonance Thruster},
+  author={Correyero Plaza, Sara and Jarrige, Julien and Packan, Denis and Ahedo Galilea, Eduardo},
+  booktitle = iepc35,
+  year = {2017},
+  series = {IEPC-2017-437},
+  address = {Atlanta, GA},
+  publisher = erps  
+}
+
+@INPROCEEDINGS{domi17,
+  author = {A. Dom{\'i}nguez-V{\'{a}}zquez and F. Cichocki and M. Merino and P. Fajardo and E. Ahedo},
+  title = {{2D} and {3D} Hybrid {PIC}/Fluid Modelling of Electric Thruster Plumes},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-209},
+  address = {Atlanta, GA},
+  publisher = erps      
+} 
+
+@INPROCEEDINGS{gion17a,
+  author =  {Gabriel Giono and St\'ephane Mazouffre and Dimitry Loubere
+  and Lara Popelier and Christophe Th\'eroude and Käthe Dannenmayer and
+  Fabien Marguet and J\'on Gudmundsson and Nickolay Ivchenko and
+  Georgi Olentsenko and Mario Merino},
+  title = {Experimental Determination of the Plasma Properties
+  in the Far-plume of an {SPT}-100 {H}all Thruster},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-385},
+  series = {IEPC-2017-385},
+  address = {Atlanta, GA},
+  publisher = erps      
+} 
+
+@INPROCEEDINGS{kahn17,
+  author =  {Daniel Kahnfeld} # and # {Ralf Schneider} # and # fc # and # mm # and # ea # and # {Julia Duras and Norbert Koch},
+  title = {Comparison of plume simulations of a {2D3V-PIC-MCC} and a {3D} Hybrid-{PIC} code},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-329},
+  address = {Atlanta, GA},
+  publisher = erps      
+} 
+
+@INPROCEEDINGS{meri17c,
+  author =  mm # and # jm # and # ea,
+  title = {Direct-{V}lasov Study of Electron Cooling Mechanisms in Paraxial, 
+  Unmagnetized Plasma Thruster Plumes},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-104}, 
+  publisher = erps      
+}
+
+@INPROCEEDINGS{meri17d,
+  author =  mm # and # asv # and # ea # { and 
+  Paul Bonoli and Jungpyo Lee and Abhay Ram and John Wright},
+  title = {Wave Propagation and Absorption in {ECR} Plasma Thrusters},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-105},
+  address = {Atlanta, GA},
+  publisher = erps      
+}
+
+@InProceedings{nava17,
+ author    = jn # and # mw # and # pf # and # mm # and # ea,
+ title     = {Experimental performances of a 1 kW HPT by means of plasma diagnostics},
+ booktitle = iepc35,
+ year      = {2017},
+ number    = {IEPC-2017-447},
+ address   = {Atlanta, GA},
+ publisher = erps
+}
+
+@INPROCEEDINGS{li17,
+  author = {Min Li} # and # mm # and # ea # and # {Junxue Ren and Haibin Tang},
+  title = {Full-pic code validation and comparison against fluid models on plasma plume expansion},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-230},
+  address = {Atlanta, GA},
+  publisher = erps      
+} 
+
+@INPROCEEDINGS{pere17,
+  author =  {D. P\'erez-Grande} # and # {J. Zhou} # and # {A. Dom\'inguez-V\'azquez} # and # {P. Fajardo} # and # {E. Ahedo},
+  title = {Development updates for a two-dimensional axisymmetric hybrid code for plasma thruster discharges},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-201},
+  address = {Atlanta, GA},
+  publisher = erps
+}
+
+@INPROCEEDINGS{pope17,
+  author = {Lara Popelier and Christophe Th\'eroude and Dimitry Loub\`ere and } # kd # { and Pierre Sarrailh and S\'ebastien Hess and } # mm # and # pf # and # ea # { and St\'ephane Mazouffre and Gabriel Giono 
+  and J\'on Gudmundsson and Nickolay Ivchenko},
+  title = {Model and Experimental validation of spacecraft-thruster Interactions for electric propulsion thrusters plumes},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-357},
+  address = {Atlanta, GA},
+  publisher = erps      
+}
+
+@INPROCEEDINGS{sanc17b,
+  author =  {G. S\'anchez-Arriaga} # and # {J. Zhou} # and # {E. Ahedo} # and # {M. Mart\'inez-S\'anchez} # and # {J.J. Ramos},
+  title = {One-dimensional direct Vlasov simulations of non-stationary plasma expansion in magnetic nozzle},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-106},
+  address = {Atlanta, GA},
+  publisher = erps
+}
+
+@INPROCEEDINGS{sanj17a,
+  author = {Manuel Sanjurjo-Rivo} # and # mm # and # fc # and # xc # and # {David
+Morante} # and # dp # and # gs # and # {Manuel Soler} # and # ea,
+  title = {The Conquest of Space: un curso MOOC y SPOC en ingenier\'ia aeroespacial},
+  booktitle = {European MOOCs Stakeholders Summit},
+  year = {2017},  
+  address = {Legan\'{e}s, Spain} 
+}
+
+@INPROCEEDINGS{sanj17b,
+  author = {Manuel Sanjurjo-Rivo} # and # mm # and # fc # and # dp # and # {David
+Morante} # and # gs # and # {Manuel Soler} # and # xc # and # ea,
+  title = {The Conquest of Space: a MOOC and a SPOC for engaging students in STEM careers},
+  booktitle = {International Conference for Educational Media},
+  year = {2017},  
+  address = {Naples, Italy} 
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2016 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+@INPROCEEDINGS{ahed16v,
+  author = ea # and # mm,
+  title = {Physics of Magnetic Nozzles for plasma thrusters},
+  booktitle = {{VKI} Lecture Series: Electric Propulsion Systems: from recent research developments to industrial space applications},
+  year = {2016}, 
+  number = {STO-AVT-263},
+  address = {Von Karman Institute, Belgium},
+  publisher = {Von Karman Institute}
+}
+
+@INPROCEEDINGS{cich16a,
+  title={A 3{D} hybrid code to study electric thruster plumes},
+  author={Cichocki, F. and Dom{\'i}nguez, A. and Merino, M. and Ahedo, E.},
+  booktitle= spc16,
+  address = {Rome, Italy, May 2-6},
+  number = {paper 2016-3124968},
+  year={2016},
+  publisher = aaaf
+} 
+
+
+@INPROCEEDINGS{domi16a,
+  title={NOMADS: Development of a versatile plasma discharge simulation platform for electric propulsion},
+  author={A. Dom{\'i}nguez-V{\'a}zquez and D. P\'erez-Grande and P. Fajardo and E. Ahedo},
+  booktitle= spc16,
+  address = {Rome, Italy, May 2-6},
+  number = {paper 2016-3124869},
+  year={2016},
+  publisher = aaaf
+} 
+
+
+@INPROCEEDINGS{cich16b,
+  author = fc # and # {Dmytro Rafalskyi and Ane Aanesland and } # mm,
+  title = {The plume neutralization process of the Pegases thruster},
+  booktitle = spc16,
+  year = {2016}, 
+  number = {3124967},
+  address = {Rome, Italy, May 2-6},
+  publisher = aaaf
+}  
+
+@inproceedings{cich16c,
+ title={A 3{D} hybrid code to study electric thruster plumes},
+ author= fc # and # adv # and # ea,
+ booktitle= spc16,
+ pages = {3124968},
+ year={2016},
+ publisher = aaaf,
+ address   = {Rome, Italy}
+}
+
+@inproceedings{meri16e,
+ title={Maiden tests of the {HPT05} {H}elicon plasma thruster prototype},
+ author= mm # and # jn # and # ea # and # vg # and # {V\'ictor S\'anchez} # and # mr # and # kd # and # eb # and # {J. Gonz{\'a}lez},
+ booktitle= spc16,
+ year={2016},
+ pages = {3125014},
+ publisher = aaaf,
+ address   = {Rome, Italy}
+}
+
+%  Ahedo: est\'a repetido en meri16h
+@INPROCEEDINGS{meri16f,   
+  author = mm # { and Aur\'elien Proux and } # pf # and # ea,
+  title = {Collisionless electron cooling in unmagnetized plasma thruster plumes},
+  booktitle = jpc52,
+  year = {2016},
+  number = {AIAA 2016-5037},
+  isbn = {978-1-62410-406-0},
+  doi = {10.2514/6.2016-5037},
+  address = {Salt Lake City, UT},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{meri16h,
+  title={Collisionless electron cooling in unmagnetized plasma thruster plumes},
+  author={Merino, M. and Fajardo, P. and Ahedo, E.},
+  booktitle={52nd Joint Propulsion Conference},
+  address = {Salt Lake City, Utah, July 25-27},
+  series = {paper 2016-5037},
+  publisher = AIAA,
+  year={2016}
+}
+@INPROCEEDINGS{pack17,
+  author = {D. Packan and P.Q. Elias and J. Jarrige and M. Merino and A. S\'anchez-Villar and E. Ahedo and G. Peyresoubes and K. Holste and P. Klar and M. Bekemans and T. Scalais and E. Bourguignon and S. Zurbach and M. Mares and A. Hooque and P. Favier},
+  title = {The {MINOTOR} {H2020} project for {ECR} thruster development},
+  booktitle = iepc35,
+  year = {2017},
+  number = {IEPC-2017-547}, 
+  publisher = erps      
+}
+
+@INPROCEEDINGS{smir16,
+  author = ms # and # am # and # {E. Kazakov} # and # df # and # md # and # mr # and # {Patricia Tejerina} # and # cb # and # mm # and # fc # and # ea,
+  title = {Ion Beam Shepherd Mission {LEOSWEEP}: mission design to ion beam thruster testing},
+  booktitle = spc16,
+  year = {2016}, 
+  number = {3125249},
+  address = {Rome, Italy},
+  publisher = aaaf
+}  
+
+@inproceedings{tian16,
+ title={Development and Validation of a {2D} wave-plasma code for helicon plasma thrusters},
+ author= bt # and # ea # and # mm,
+ booktitle= spc16,
+ pages = {3124913},
+ year = {2016},
+ publisher = aaaf,
+ address   = {Rome, Italy}
+}
+
+@inproceedings{corr16a,
+  title={Expansion of a collisionless magnetized plasma plume with bi-Maxwellian electrons},
+  author= scorr # and # jn # and # ea,
+  booktitle={52nd Joint Propulsion Conference},
+  address = {Salt Lake City, Utah, July 25-27},
+  publisher = AIAA,
+  pages={5035},
+  year={2016}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2015 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+@INPROCEEDINGS{cich15a,
+ title={Electric Propulsion Subsystem Optimization for {``I}on {B}eam {S}hepherd{"} missions},
+ author = fc # and # mm # and # ea # and # {Davar Feili} # and # mr,
+ booktitle = iepc34,
+ address = {Hyogo-Kobe, Japan, July 6-10},
+ number = {IEPC-2015-420},
+ publisher = erps,
+ year={2015}
+}
+
+@INPROCEEDINGS{cich15b,
+ author = fc # and # mm # ea # and # {Joseph Wang},
+ title = {Fluid vs {PIC} Modeling of a Plasma Plume Expansion},
+ booktitle = iepc34,
+ number = {IEPC-2015-35},
+ address = {Hyogo-Kobe, Japan, July 6-10},
+ publisher = erps,
+ year = {2015}
+}
+
+@INPROCEEDINGS{feil15,
+  author = df # and # mr # and # ea # and # mm # and # ms # and # md,
+  title = {Impulse Transfer Thruster for an Ion Beam Shepherd Mission},
+  booktitle = iepc34,
+  year = {2015},
+  number = {IEPC-2015-382},
+  address = {Hyogo-Kobe, Japan, July 6-10},
+  publisher = erps      
+}
+ 
+@inproceedings{meri15c,
+ title={Design and development of a 1 kW-class helicon antenna thruster},
+ author= mm # and # jn # and # {Santiago Casado} # and  # ea # vg # and # mr # and # eb # and # {Jos{\'e} {Gonz{\'a}lez-del Amo}},
+ booktitle= iepc34,
+ number = {IEPC-2015-297},
+ year={2015},
+ address = {Hyogo-Kobe, Japan, July 6-10},
+ publisher = erps
+}
+
+@INPROCEEDINGS{meri15d,
+  author = mm # and # ea,
+  title = {Towards thrust vector control with a {3D} steerable magnetic nozzle},
+  booktitle = iepc34,
+  year = {2015},
+  number = {IEPC-2015-414},
+  address = {Hyogo-Kobe, Japan, July 6-10},
+  publisher = erps
+}
+
+@INPROCEEDINGS{meri15e,
+  author = mm # and # ea,
+  title = {Modelling the expansion of magnetized plasma jets in electric propulsion},
+  booktitle = icpig32,
+  year = {2015}, 
+  number = {TL19},
+  address = {Iasi, Romania},
+  publisher = eps
+}  
+
+@INPROCEEDINGS{nava15,
+  title={Collisionless electron cooling on magnetized plasma expansions: advances on modelling},
+  author= jn # and # {S. Correyero and  E. Ahedo},
+  booktitle = iepc34,
+  series = {paper 2015-117},
+  address = {Kobe, Japan, July 6-10},
+  publisher = erps,
+  year={2015}
+}
+
+@INPROCEEDINGS{nava15b,
+  author = jn # and # ea, 
+  title = {Hybrid simulation of a Magnetic Nozzle plume: exploring magnetized/demagnetized regimes},
+  booktitle = iepc34,
+  year = {2015},
+  number = {IEPC-2015-354},
+  publisher = erps, 
+}
+
+@INPROCEEDINGS{ahed15l,
+  author = {Escobar, D. and Ahedo, E.},
+  title = {Numerical analysis of high-frequency azimuthal oscillations in {Hall} thrusters},
+  booktitle = iepc34,
+  year = {2015},
+  number = {IEPC-2015-371},
+  address = {Hyogo-Kobe, Japan, July 6-10},
+  publisher = erps
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2014 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+@INPROCEEDINGS{cich14,
+  author = fc # and # mm # and # ea,
+  title = {Modeling and simulation of {EP} Plasma Plume Expansion into Vacuum},
+  booktitle = jpc50,
+  year = {2014},
+  number = {AIAA-2014-3828}, 
+  isbn = {978-1-62410-303-2},
+  doi = {10.2514/MJPC14},
+  address = {Cleveland, Ohio, July 28-30},
+  publisher = AIAA
+}
+ 
+@INPROCEEDINGS{tian14,
+  author = {Bin Tian and Eduardo Ahedo and Jaume Navarro},
+  title = {Investigation of Plasma-wave Interaction in Helicon Antenna Thrusters},
+  booktitle = {50th AIAA/ASME/SAE/ASEE Joint Propulsion Conference},
+  chapter = {},
+  pages = {},
+  year = {2014},
+  doi = {},
+  URL = {},
+  eprint = {}
+}
+
+@INPROCEEDINGS{meri14b,
+  author = mm # and # fc # and # ea,
+  title = {Plasma Thruster Beam Expansion and Impingement in Space Debris},
+  booktitle = sctc13,
+  year = {2014},
+  number = {253}, 
+  publisher = jpl_nasa
+}
+
+@INPROCEEDINGS{nava14,
+  author = jn # and # ea # and # mm # and # {Igone Urdampilleta and Mercedes Ruiz and Jos\'e {Gonz{\'a}lez-del Amo}},
+  title = {Assessment of helicon plasma thruster technology for space missions},
+  booktitle = spc14,
+  year = {2014},
+  publisher = aaaf
+}
+
+@ARTICLE{nava14a,
+  author = jn # and # mm_ea,
+  title = {The helicon plasma thruster: State-of-art prototypes and modeling},
+  journal = psst,
+  owner = {mario},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{nava14b,
+  author = jn # and # mm # and # ea # and # mr # { and Victor S\'anchez},
+  title = {Design of Helicon Plasma Thruster subsystems},
+  booktitle = jpc50,
+  year = {2014},
+  number = {AIAA-2014-3699}, 
+  isbn = {978-1-62410-303-2},
+  doi = {10.2514/MJPC14}, 
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{nava14c,
+  author = {Jaume Navarro-Cavall\'e and Manuel Mart\'inez-S\'anchez and Eduardo Ahedo},
+  title = {Collisionless electron cooling in a magnetic nozzle},
+  booktitle = {50th AIAA/ASME/SAE/ASEE Joint Propulsion Conference \& Exhibit},
+  year = {2014},
+  number = {AIAA 2014-4028},
+  address = {Cleveland, Ohio},
+  publisher = AIAA
+}
+
+@inproceedings{ruiz14,
+ title={The {FP7} {LEOSWEEP} project: Improving low earth orbit security with enhanced electric propulsion},
+ author= mr # and # {Igone Urdampilleta} # and # cb # and # ea # and # mm # and # fc,
+ booktitle=spc14,
+ number ={2014-2980908},
+ year={2014},
+ publisher = aaaf,
+ Address   = {Cologne, Germany, May 19-22}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2013 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@INPROCEEDINGS{meri13c,
+  author = mm_ea,
+  title = {Influence of Electron and Ion Thermodynamics on the Magnetic Nozzle
+	Plasma Expansion},
+  booktitle = iepc33,
+  year = {2013},
+  number = {IEPC-2013-247},
+  publisher = erps,
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{nava13a,
+  author = jn # and # ea # and # mm # and # {Victor G\'omez and Mercedes Ruiz},
+  title = {Helicon Plasma Thrusters: prototypes and advances on modeling},
+  booktitle = iepc33,
+  year = {2013},
+  number = {IEPC-2013-285}, 
+  publisher = erps
+}
+
+@INPROCEEDINGS{nava13b,
+  author = jn,
+  title = {Helicon plasma thruster prototypes and modelling status},
+  booktitle = {International Conference on Phenomena in Ionized Gases},
+  year = {2013},
+  timestamp = {2014.01.13}
+}
+
+
+
+%----------------------------------------------------------------------
+% -------------------------- 2012 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+@INPROCEEDINGS{meri12,
+  author = mm,
+  title = {{2D} plasma flow in a magnetic nozzle with a bi-modal Electron Energy
+  Distribution Function},
+  booktitle = {$50^{th}$ AIAA Aerospace Sciences Meeting},
+  year = {2012}, 
+  publisher = AIAA,
+  number = {AIAA 2012-0139},
+  comment = {This is because I won the pegasus}
+}
+
+@INPROCEEDINGS{meri12b,
+  author = mm # and # ea,
+  title = {Magnetic Nozzle Far-Field Simulation},
+  booktitle = jpc48,
+  year = {2012},
+  number = {AIAA-2012-3843},
+  isbn = {978-1-60086-935-8},
+  doi = {10.2514/MJPC12}, 
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{meri12d,
+  author = mm # and # ea,
+  title = {Advanced simulation of magnetic nozzles for plasma thrusters},
+  booktitle = spc12,
+  year = {2012},
+  publisher = aaaf
+}
+
+@INPROCEEDINGS{nava12a,
+  author = jn # and # mm # and # ea,
+  title = {Two-Fluid and PIC-Fluid Code Comparison of the Plasma Plume in a Magnetic Nozzle},
+  booktitle = jpc48,
+  year = {2012},
+  number = {AIAA-2012-3840},
+  isbn = {978-1-60086-935-8},
+  doi = {10.2514/MJPC12}, 
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{nava12b,
+  author = jn # and # mm # and # ea,
+  title = {A fluid dynamic performance model of a helicon thruster},
+  booktitle = jpc48,
+  year = {2012},
+  number = {AIAA-2012-3955},
+  isbn = {978-1-60086-935-8},
+  doi = {10.2514/MJPC12}, 
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{nava12c,
+  author = jn # and # mm_ea,
+  title = {Plasma Structure Inside and Outside a Helicon Thruster},
+  booktitle = {39th IEEE International Conference on Plasma Science},
+  year = {2012},
+  owner = {mario},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{dann12a,
+  author = {K\"athe Dannenmayer and St\'ephane Mazouffre} # and # mm # and # ea,
+  title = {Hall Effect Thruster Plasma Plume Characterization with Probe Measurements and Self-Similar Fluid Models},
+  booktitle = jpc48,
+  year = {2012},
+  number = {AIAA-2012-4117},
+  isbn = {978-1-60086-935-8},
+  doi = {10.2514/MJPC12},
+  address = {Atlanta, Georgia, July 30 - August 1},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{boxb12a,
+  author = {Adam Boxberger and Patrick Bambach and Georg Herdrich and Stefanos Fasoulas} # and # mm # and # ea,
+  title = {Experimental Investigation of Applied-Field Magnetoplasmadynamic Thrusters at Institute of Space Systems},
+  booktitle = jpc48,
+  year = {2012},
+  number = {AIAA-2012-4012},
+  isbn = {978-1-60086-935-8},
+  doi = {10.2514/MJPC12}, 
+  publisher = AIAA
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2011 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+@INPROCEEDINGS{bomb11b,
+  author = cb # and # hu # and # mm # and # ea # and # jp # and # {Joris Olympio},
+  title = {Dynamics of Ion-beam-propelled space debris},
+  booktitle = {22nd International Symposium on Space Flight Dynamics},
+  year = {2011}
+}
+
+@TechReport{bomb11c,
+  Title                    = {Ariadna Call for Ideas: Active Removal of Space Debris Ion Beam Shepherd for Contactless Debris Removal},
+  Author                   = cb # and # mm_ea # and # jp # and # hu # and # {J. Herrera-Montojo†, A. Iturri-Torrea†},
+  Year                     = {2011},
+  Owner                    = {ESA}
+}
+
+@INPROCEEDINGS{ahed11e,
+  author = ea_mm,
+  title = {On electron inertia and current ambipolarity in magnetic nozzle models},
+  booktitle = iepc32,
+  year = {2011},
+  number = {IEPC-2011-050}, 
+  publisher = erps,
+  timestamp = {2014.01.13}
+}
+
+@InProceedings{ahed11f,
+  author    = {Ahedo, E.},
+  title     = {Plasma dynamics in a helicon thruster},
+  booktitle = {Proceedings of EUCASS 2011, 4-8 July 2011, Saint Petersburg, Russia},
+  year      = {2011},
+  series    = {paper 118},
+}
+
+@INPROCEEDINGS{ahed11g,
+  author = {Merino, M. and Ahedo, E.},
+  title = {Plasma detachment mechanisms in a magnetic nozzle},
+  booktitle = {Proceedings of 47th Joint Propulsion Conference, San Diego, CA},
+  year = {2010},
+  series = {AIAA 2011-5999},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed11k,
+  author = {Mart{\'i}nez, D. and Ahedo, E.},
+  title = {Plasma-wave interaction in an helicon thruster},
+  booktitle = {32th International Electric Propulsion Conference, Wiesbaden, Germany},
+  year = {2011},
+  series = {IEPC 2011-047}
+}
+
+@INPROCEEDINGS{ahed11l,
+  author = {Navarro, J. and Ahedo, E.},
+  title = {Hybrid model simulation of a plasma plume in a magnetic nozzle},
+  booktitle = {32th International Electric Propulsion Conference, Wiesbaden, Germany},
+  year = {2011},
+  series = {IEPC 2011-048}
+}
+
+@INPROCEEDINGS{ahed11o,
+  author = {Merino, M. and Ahedo, E. and Bombardelli, C. and Urrutxua, H. and
+	Pel{\'a}ez, J.},
+  title = {Hypersonic Plasma Plume Expansion in Vacuum and Momentum Transmission
+	to a Far Body},
+  booktitle = {32th International Electric Propulsion Conference, Wiesbaden, Germany},
+  year = {2011},
+  series = {IEPC 2011-086}
+}
+
+@INPROCEEDINGS{ahed11p,
+  author = {Escobar, D. and Ahedo, E.},
+  title = {Ionization-induced azimuthal oscillation in {Hall} Effect Thrusters},
+  booktitle = {32th International Electric Propulsion Conference, Wiesbaden, Germany},
+  year = {2011},
+  series = {IEPC 2011-196}
+}
+
+@INPROCEEDINGS{ahed11q,
+  author = {Santos, R. and Ahedo, E. and Raitses, Y. and Fisch, N.},
+  title = {Transitional regime in the start-up process of conventional {Hall} thrusters},
+  booktitle = {32th International Electric Propulsion Conference, Wiesbaden Germany},
+  publisher= erps, 
+  year = {2011},
+  series = {IEPC 2011-059}
+}
+
+@INPROCEEDINGS{meri11a,
+  author = mm # and # ea # and # cb # and # hu # and # jp # and # {Leopold Summerer},
+  title = {Space Debris Removal with an Ion Beam Shepherd Satellite: target-plasma interaction},
+  booktitle = jpc47,
+  year = {2011},
+  number = {AIAA-2011-6142},
+  isbn =  {978-1-60086-949-5},
+  doi = {10.2514/MJPC11}, 
+  publisher = AIAA,
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri11b,
+  author = mm_ea,
+  title = {Plasma detachment mechanisms in a magnetic nozzle},
+  booktitle = jpc47,
+  year = {2011},
+  number = {AIAA-2011-5999}, 
+  publisher = AIAA,
+  doi = {10.2514/MJPC11},
+  isbn = {978-1-60086-949-5},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri11c,
+  author = mm # and # ea # and # cb # and # hu # and # jp,
+  title = {Ion Beam Shepherd Satellite for Space Debris Removal},
+  booktitle = {4th European Conference for Aerospace Sciences},
+  year = {2011},
+  publisher = {EUCASS},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri11d,
+  author = mm # and # ea # and # cb # and # hu # and # jp,
+  title = {Hypersonic Plasma Plume Expansion in Space},
+  booktitle = iepc32,
+  year = {2011},
+  number = {IEPC-2011-086}, 
+  publisher = erps,
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri11g,
+  author = {Merino, M. and Ahedo, E. and Bombardelli, C. and Urrutxua, H. and
+	Pel{\'a}ez, J.},
+  title = {Ion Beam Shepherd Satellite for Space Debris Removal},
+  booktitle = {Proceedings of EUCASS 2011, 4-8 July 2011, Saint Petersburg, Russia},
+  year = {2011},
+  series = {paper 263}
+}
+
+@INPROCEEDINGS{meri11i,
+  author = mm,
+  title = {{2D} plasma flow in a magnetic nozzle with a bi-modal Electron Energy
+  Distribution Function},
+  booktitle = {7th Pegasus-AIAA Student Conference},
+  year = {2011},
+  publisher = AIAA,
+  timestamp = {2014.01.13},
+  comment = {I won the first prize. The same paper (almost) was presented at the ASM 2012, meri12}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2010 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+@INPROCEEDINGS{ahed10b,
+  author = {Merino, M. and Ahedo, E.},
+  title = {Two-dimensional magnetic nozzle acceleration of a two-electron component
+	plasma},
+  booktitle = {Proceedings of Space Propulsion 2010, San Sebasti{\'a}n, Spain, May
+	3-6, 2010},
+  year = {2010},
+  pages = {2010}
+}
+
+@INPROCEEDINGS{ahed10c,
+  author = ea # and # mm,
+  title = {Preliminary assessment of detachment in a plasma thruster magnetic nozzle},
+  booktitle = jpc46,
+  year = {2010},
+  number = {AIAA 2010-6613},
+  isbn = {978-1-60086-958-7},
+  doi = {10.2514/MJPC10},
+  address = {Nashville, TN},
+  publisher = AIAA,
+}
+
+@INPROCEEDINGS{ahed10d,
+  author = {Merino, Mario and Ahedo, Eduardo},
+  title = {{Two-Dimensional Magnetic Nozzle Acceleration of a Two-Electron Component
+	Plasma expansion}},
+  booktitle = {Space Propulsion Conference 2010},
+  year = {2010},
+  pages = {1--10},
+  abstract = {The influence of a bi-modal Electron Energy Distribu- tion Function consisting on hot and cold electron popu- lations on the expansion of a current-free plasma through a divergent magnetic nozzle is analyzed. Two different models, 1D and {2D}, are employed to characterize the plasma response and the formation of potential steep- enings, which may bring notable benefits to propulsive applications. Main results consist on: 1D and {2D} plasma prop- erty profiles along the nozzle, for the complete quasineu- tral expansion regime; an analysis of quasineutral pro- file steepening and double layer formation in terms of the electron population parameters; the {2D} structure of these flow features; and a study of the thrust, specific impulse, and plume efficiency provided by the nozzle.},
+  keywords = {current-free double layer,magnetic nozzle,multi-species plasma,propulsive performances,quasineutral steepening layer}
+}
+
+@INPROCEEDINGS{meri10a,
+  author = mm_ea,
+  title = {Two-dimensional magnetic nozzle acceleration of a two-electron component plasma},
+  booktitle = {2nd Space Propulsion Conference},
+  year = {2010},
+  publisher = {Association A\'{e}ronautique et Astronautique de France},
+  number = {SP2010-1841391},
+  timestamp = {2014.01.13}
+}
+
+%----------------------------------------------------------------------
+% -------------------------- 2009 CONFERENCES -------------------------
+%----------------------------------------------------------------------
+
+@InProceedings{ahed09d,
+  author = ea # and # mm,
+  title = {Acceleration of a focused plasma jet in a divergent magnetic nozzle},
+  booktitle = iepc31,
+  year = {2009},
+  number = {IEPC-2009-002}, 
+  pages = {1--10},
+  publisher = erps
+}
+
+@INPROCEEDINGS{ahed09f,
+  author = ea # and # mm,
+  title = {Two-dimensional plasma acceleration in a divergent magnetic nozzle},
+  booktitle = jpc45,
+  year = {2009},
+  number = {AIAA 2009-5361},
+  isbn = {978-1-60086-972-3},
+  doi = {10.2514/MJPC09}, 
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed09h,
+  author = {Ahedo, E.},
+  title = {Cylindrical model of a helicon-generated plasma},
+  booktitle = {31th International Electric Propulsion Conference, Ann Arbor, Michigan,
+	USA},
+  year = {2009},
+  series = {IEPC 2009-193}
+}
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ----------------- CONFERENCES BEFORE 2009 ---------------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+@INPROCEEDINGS{ahed83,
+  author = {Anza, J.J. and Ahedo, E. and Alarc{\'o}n, E. and Riva, I.D.},
+  title = {A new boundary condition solved with BIEM},
+  booktitle = {Boundary Element Methods in Engineering,},
+  year = {1983},
+  editor = {Brebbia, C.A.},
+  series = {ISBN 3-540-11819-5, 0-387-11819-5},
+  pages = {607--617},
+  publisher = {Springer}
+}
+
+@INPROCEEDINGS{ahed92b,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {Current-Voltage Response of a Spherical Plasma Contactor},
+  booktitle = {Physics of Charged Bodies in Space Plasmas},
+  year = {1992},
+  editor = {Dobrowolny, M. and Sindoni, E.},
+  pages = {1--8},
+  publisher = {Compositori, Bologna}
+}
+
+@INPROCEEDINGS{ahed92c,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {An anodeless tether generator},
+  booktitle = {Physics of Charged Bodies in Space Plasmas},
+  year = {1992},
+  editor = {Dobrowolny, M. and Sindoni, E.},
+  pages = {201--208},
+  publisher = {Compositori, Bologna}
+}
+
+@INPROCEEDINGS{ahed94b,
+  author = {Ahedo, E. and Conde, L. and Pel{\'a}ez, J. and Sanmart{\'i}n, J.R.},
+  title = {New Electrodynamic Tether Technology},
+  booktitle = {SP-363: Proc. 2nd Euro-Latin American Space Days},
+  year = {1994},
+  pages = {383--387},
+  publisher = {European Space Agency, Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed94c,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E. and Conde, L. and Iba{\~n}ez, F.
+	and Pel{\'a}ez, J.},
+  title = {An anodeless (bare) tether experiment},
+  booktitle = {Proc. 2nd Int. Workshop on the Application of Tethered Systems in
+	Space},
+  year = {1994},
+  pages = {261--268},
+  publisher = {Institute of Space and Astronautical Sciences, Japan}
+}
+
+@INPROCEEDINGS{ahed94d,
+  author = {Ahedo, E. and Lapuerta, V.},
+  title = {Non-uniform emission by spherical plasma contactors},
+  booktitle = {WPP-081: Proc. Int. Round Table on Tethers in Space},
+  year = {1994},
+  pages = {208--217},
+  publisher = {European Space Agency, Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed95b,
+  author = {Ahedo, E. and Mart{\'i}nez, M.},
+  title = {Ionization in an electron collecting contactor},
+  booktitle = {Proc. 4th International Conference on Tethers in Space},
+  year = {1995},
+  pages = {889--896},
+  publisher = {Smithsonian Institution}
+}
+
+@INPROCEEDINGS{ahed95c,
+  author = {Lapuerta, V. and Ahedo, E.},
+  title = {Stability model for plasma contactors},
+  booktitle = {Proc. 4th International Conference on Tethers in Space},
+  year = {1995},
+  pages = {897--902},
+  publisher = {Smithsonian Institution}
+}
+
+@INPROCEEDINGS{ahed97b,
+  author = {Ahedo, E.},
+  title = {Plasma-wall interaction in an oblique magnetic field},
+  booktitle = {Proc. XXII International Conference on Phenomena in Ionized Gases},
+  year = {1997},
+  editor = {Bordage, M.C. and Gleizes, A.},
+  volume = {I},
+  pages = {2--3},
+  publisher = {Univ. Paul Sabatier, Toulouse, France}
+}
+
+@INPROCEEDINGS{ahed97c,
+  author = {Lapuerta, V. and Ahedo, E.},
+  title = {Ion-electron stability in an electron-collecting contactor},
+  booktitle = {Proc. XXII International Conference on Phenomena in Ionized Gases},
+  year = {1997},
+  editor = {Bordage, M.C. and Gleizes, A.},
+  volume = {I},
+  pages = {204--205},
+  publisher = {Univ. Paul Sabatier, Toulouse, France}
+}
+
+@INPROCEEDINGS{ahed98a,
+  author = {Ahedo, E. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {One-dimensional plasma structure in {Hall} thruster},
+  booktitle = {Proc. 34th Joint Propulsion Conference, Cleveland, OH},
+  year = {1998},
+  series = {AIAA-98-8788},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed00a,
+  author = {Ahedo, E. and Mart{\'i}nez-Cerezo, P. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {Steady and linearly-unsteady analysis of a {Hall} thruster with an
+	internal sonic point},
+  booktitle = {Proc. 36th Joint Propulsion Conference, Huntsville, AL},
+  year = {2000},
+  series = {AIAA 2000-3655},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed00b,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.},
+  title = {Analysis of electrodynamic tethers as deorbiting systems},
+  booktitle = {Proc. 36th Joint Propulsion Conference, Huntsville, AL},
+  year = {2000},
+  series = {AIAA 2000-3763},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed00c,
+  author = {Ahedo, E. and Mart{\'i}nez-Cerezo, P. and Mart{\'i}nez-S{\'a}nchez,
+	M.},
+  title = {1-D performance analysis of a {Hall} thruster},
+  booktitle = {SP-465: 3rd Spacecraft Propulsion Conference, Cannes (France)},
+  year = {2000},
+  pages = {323--330},
+  address = {Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed01b,
+  author = {Ahedo, E. and Mart{\'i}nez-Cerezo, P. and Gallardo, J.M. and Mart{\'i}nez-S{\'a}nchez,
+	M.},
+  title = {Modelling the plasma flow in a {Hall} thruster},
+  booktitle = {SP-476: 7th Spacecraft Charging Technology Conference},
+  year = {2001},
+  pages = {539--544},
+  publisher = {European Space Agency, Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed01c,
+  author = {Ahedo, E. and Mart{\'i}nez-Cerezo, P. and Mart{\'i}nez-S{\'a}nchez,
+	M.},
+  title = {Model of plasma-wall interaction effects in a {Hall} thruster},
+  booktitle = {Proc. 37th Joint Propulsion Conference, Salt Lake City, UT},
+  year = {2001},
+  series = {AIAA 2001-3323},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed01d,
+  author = {Ahedo, E. and Mart{\'i}nez-Cerezo, P. and Gallardo, J.M. and Mart{\'i}nez-S{\'a}nchez,
+	M.},
+  title = {Characterization of the plasma in a {Hall} thruster},
+  booktitle = {Proc. 27th International Electric Propulsion Conference, Pasadena,
+	CA},
+  year = {2001},
+  series = {IEPC 01-17}
+}
+
+@INPROCEEDINGS{ahed01f,
+  author = {Lapuerta, V. and Ahedo, E.},
+  title = {Landau fluid model of multi-stream instabilities and application
+	to plasma contactor plumes},
+  booktitle = {SP-476: 7th Spacecraft Charging Technology Conference},
+  year = {2001},
+  pages = {563--568},
+  publisher = {European Space Agency, Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed01h,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {An upper atmospheric probe for auroral effects},
+  booktitle = {SP-476: 7th Spacecraft Charging Technology Conference},
+  year = {2001},
+  pages = {315--320},
+  publisher = {European Space Agency, Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed01i,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E. and Conde, L. and Pel{\'a}ez, J.
+	and Ruiz, M. and Weinberger, M. and Hilgers, A.},
+  title = {Short electrodynamic tethers},
+  booktitle = {SP-476: 7th Spacecraft Charging Technology Conference},
+  year = {2001},
+  pages = {581--585},
+  publisher = {European Space Agency, Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed02e,
+  author = {Ahedo, E. and Parra, F.I.},
+  title = {Model of radial plasma-wall interactions in a {Hall} thruster},
+  booktitle = {Proc. 38th Joint Propulsion Conference, Indianapolis, IN},
+  year = {2002},
+  series = {AIAA 2002-4106},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed02f,
+  author = {Ahedo, E. and Gallardo, J.M. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {Effects of the dielectric walls on the axial discharge of a {Hall}
+	thruster},
+  booktitle = {Proc. 38th Joint Propulsion Conference, Indianapolis, IN},
+  year = {2002},
+  series = {AIAA 2002-4244},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed02g,
+  author = {Gallardo, J.M. and Ahedo, E.},
+  title = {Effects of an intermediate electrode on the {Hall} thruster plasma
+	discharge},
+  booktitle = {Proc. 38th Joint Propulsion Conference, Indianapolis, IN},
+  year = {2002},
+  series = {AIAA 2002-4112},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed02h,
+  author = {Pel{\'a}ez, J. and L{\'o}pez-Rebollal, O. and Lara, M. and Ahedo,
+	E.},
+  title = {Dynamic stability of a bare tether as a deorbiting device},
+  booktitle = {AAS/AIAA Space Flight Mechanics Meeting, San Antonio, TE},
+  year = {2002},
+  series = {AAS 02-200},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed02k,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E.},
+  title = {Trade-off study on deorbiting S/C in near polar orbit},
+  booktitle = {Proc. 38th Joint Propulsion Conference, Indianapolis, IN},
+  year = {2002},
+  series = {AIAA 2002-4046},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed02n,
+  author = {Ahedo, E. and Gallardo, J.M.},
+  title = {Low power {Hall} thrusters: physics, technical constraints and design},
+  booktitle = {Electric Micropropulsion Workshop},
+  year = {2002}
+}
+
+@INPROCEEDINGS{ahed03a,
+  author = {Ahedo, E. and Gallardo, J.M.},
+  title = {Scaling down {Hall} thrusters},
+  booktitle = {Proc. 28th International Electric Propulsion Conference, Toulouse,
+	France},
+  year = {2003},
+  series = {IEPC-03-104}
+}
+
+@INPROCEEDINGS{ahed03b,
+  author = {Ahedo, E. and Gallardo, J.M. and Parra, F.I. and Trigo, C.P.},
+  title = {Recent results from a model of the {Hall} thruster discharge},
+  booktitle = {Proc. 28th International Electric Propulsion Conference, Toulouse,
+	France},
+  year = {2003},
+  series = {IEPC-03-331}
+}
+
+@INPROCEEDINGS{ahed03f,
+  author = {Ahedo, E. and Escobar, D. and P{\'e}rez, C. and Rus, J.},
+  title = {Parametric investigation of the {Hall} thruster discharge},
+  booktitle = {Proc. 39th Joint Propulsion Conference, Huntsville, AL},
+  year = {2003},
+  series = {AIAA 2003-4707},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed03h,
+  author = {Molina, A. and Lapuerta, V. and Ahedo, E.},
+  title = {Time-dependent model of the {Hall} thruster discharge},
+  booktitle = {Proc. 39th Joint Propulsion Conference, Huntsville, AL},
+  year = {2003},
+  series = {AIAA 2003-4856},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed04b,
+  author = {Rus, J. and Ahedo, E.},
+  title = {A no-anode-sheath regime of the {Hall} thruster discharge},
+  booktitle = {SP-555: 4th Spacecraft Propulsion Conference, Sardinia (Italy)},
+  year = {2004},
+  publisher = {European Space Agency, Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed04c,
+  author = {Parra, F. and Ahedo, E. and Mart{\'i}nez-S{\'a}nchez, M. and Fife, J.M.},
+  title = {Improvement of the plasma-wall model on a fluid-PIC code of a {Hall} thruster},
+  booktitle = {SP-555: 4th Spacecraft Propulsion Conference, Sardinia (Italy)},
+  year = {2004},
+  publisher = {European Space Agency, Noordwijk, The Netherlands}
+}
+
+@INPROCEEDINGS{ahed04d,
+  author = {Ahedo, E.},
+  title = {On the near anode region of the {Hall} thruster discharge},
+  booktitle = {Proc. 40th Joint Propulsion Conference, Fort Lauderdale, FL},
+  year = {2004},
+  series = {AIAA 2004-3774},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed05i,
+  author = {Ahedo, E. and Pablo, V. de and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {Effects of partial thermalization and secondary emission on the electron
+	distribution function of {Hall} thrusters},
+  booktitle = {Proc. 29th International Electric Propulsion Conference, Princeton,
+	USA},
+  year = {2005},
+  series = {IEPC-2005-118}
+}
+
+@INPROCEEDINGS{ahed06c,
+  author = {Ahedo, E. and Pablo, V. de},
+  title = {Effects of electron secondary emission and partial thermalization
+	on a {Hall} thruster plasma},
+  booktitle = {42th Joint Propulsion Conference, Sacramento, CA},
+  year = {2006},
+  series = {AIAA-2006-4328},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed06d,
+  author = {Ahedo, E. and Maqueda, I. and Ant{\'o}n, A. and Raitses, Y. and Fisch,
+	N.},
+  title = {Numerical simulations of a 2{kW} {Hall} thruster},
+  booktitle = {42nd Joint Propulsion Conference, Sacramento, CA},
+  year = {2006},
+  series = {AIAA-2006-4655},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed06f,
+author = {Anton, A. and Ahedo, E.},
+title = {Contour algorithms for a {Hall} thruster hybrid code},
+booktitle = {42nd Joint Propulsion Conference},
+publisher = AIAA,
+series = {AIAA-2006-4834},
+address = {Sacramento, CA, USA, July 9-12},
+year = {2006}
+}
+
+@INPROCEEDINGS{ahed07c,
+  author = {Ahedo, E. and Ant{\'o}n, A. and Garmendia, I. and Caro, I. and Amo,
+	J.G. del},
+  title = {Simulation of wall erosion in {Hall} thrusters},
+  booktitle = {30th International Electric Propulsion Conference, Florence, Italy},
+  year = {2007},
+  series = {IEPC 2007-067}
+}
+
+@INPROCEEDINGS{ahed08,
+  author    = ea_mm,
+  title     = {Two-dimensional plasma acceleration in a divergent magnetic nozzle},
+  booktitle = {44th Joint Propulsion Conference, Hartford, CT},
+  year      = {2008},
+  series    = {AIAA 2009-5361},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed08f,
+  author = {Ahedo, E. and Mart{\'i}nez-S{\'a}nchez, M.},
+  title = {The Role Of Current-Free Double-Layers In Plasma Propulsion},
+  booktitle = {44th Joint Propulsion Conference, Hartford, CT},
+  year = {2008},
+  series = {AIAA 2008-5005},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed08h,
+  author = {Ahedo, E. and Ramos, J.},
+  title = {Analytic results for two-fluid tearing modes},
+  booktitle = {Center for Extended MHD Modeling(CEMM) Workshop, Dallas TX, November
+	2008},
+  year = {2008},
+  series = {CP6.00072}
+}
+
+@INPROCEEDINGS{ahed08i,
+  author = {Ahedo, E. and Ramos, J.},
+  title = {Parametric analysis of the two-fluid tearing instability},
+  booktitle = {50th Annual Meeting of the APS-Division of Plasma Physics, November
+	2008},
+  year = {2008}
+}
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ------------------ DISSERTATION PUBLICATIONS SECTION ---------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+@PHDTHESIS{bell24b,
+  author = {E. Bello-Benítez},
+  title={Analysis of turbulent transport in {H}all-effect plasma thrusters},  
+  year={2024},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+  }
+
+@PHDTHESIS{pera24a,
+  author = {J. Perales-Díaz},
+  title={Fluid-kinetic models for space plasma thrusters},  
+  year={2024},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+  }
+
+@PHDTHESIS{wijnen22,
+  author = mw,
+  title={Diagnostic Methods for the Characterization of a Helicon Plasma Thruster},  
+  year={2022},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+}
+
+@PHDTHESIS{svil22c,
+year = {2022},
+title = {Modeling the plasma discharge in an electron-cyclotron-resonance thruster},
+copyright = {Atribución-NoComercial-SinDerivadas 3.0 España; http://creativecommons.org/licenses/by-nc-nd/3.0/es/; openAccess},
+language = {eng},
+author = {Sánchez Villar, Álvaro},
+school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain},
+keywords = {ECRT; Electron cyclotron resonance thruste; Electric propulsion technology; Cold plasma; Electromagnetic waves; One-dimensional ECR model; Aeronáutica},
+}
+
+@PHDTHESIS{jime24b,
+  title={Analysis of the wave-plasma interaction in electrodeless plasma thrusters},
+  author={Jim{\'e}nez, Pedro},
+  year={2024},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+}
+
+@PHDTHESIS{jime20,
+  author = {Jim\'enez, P.},
+  title={Helicon plasma thruster full-wave simulations},  
+  year={2020},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain},
+  type = {MSc Thesis}
+  }
+
+@PHDTHESIS{zhou21,
+  author = jz,
+  title={Modeling and simulation of the plasma discharge in a radiofrequency thruster},  
+  year={2021},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+  }
+
+@PHDTHESIS{corr20,
+  author = scorr,
+  title={Physics of plasma plumes accelerated by magnetic nozzles: an experimental and theoretical research},  
+  year={2020},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+  }
+
+@PHDTHESIS{domi19a,
+  author = {A. Dom{\'i}nguez-V{\'{a}}zquez},
+  title={Axisymmetric simulation codes for Hall effect thrusters and plasma plumes},  
+  year={2019},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+  }
+
+
+
+@PHDTHESIS{pere18a,
+  author = dp,
+  title={Fluid modeling and simulation of the electron population in Hall effect thrusters with complex magnetic topologies},  year={2018},
+  school = {Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+  }
+  
+@PHDTHESIS{cich17c,
+  title={Analysis of the expansion of a plasma thruster plume into vacuum},
+  author={Cichocki, F.},
+  year = {2017},
+  school={Universidad Carlos III de Madrid, Legan{\'e}s, Spain}
+}
+
+@PHDTHESIS{tian17a,
+  author=bt,
+  title={Modeling of physical processes in radio-frequency plasma thrusters},
+  year={2017},
+  publisher = {Universidad Carlos III de Madrid}
+}
+
+@PHDTHESIS{nava16a,
+  number = {10.20868/UPM.thesis.45188},
+  month = {December},
+  title = {Plasma simulation in space propulsion : the helicon plasma thruster},
+  school = {Aeronauticos},
+  author = {Jaume Navarro Cavall{\'e}},
+  year = {2016},
+  url = {http://oa.upm.es/45188/}
+}
+
+@PHDTHESIS{esco15b,
+  author = de,
+  title = {Electron transport and azimuthal oscillations in Hall thrusters},
+  school = {Escuela T\'ecnica Superior de Ingenieros Aeron\'auticos},
+  publisher = {Universidad Polit{\'e}cnica de Madrid},
+  year = {2015},
+}
+
+@phdthesis{meri13f,
+  title={Analysis of magnetic nozzles for space plasma thrusters},
+  author=mm,
+  year={2013},
+  school = {Universidad Polit\'{e}cnica de Madrid}
+}
+
+@PHDTHESIS{meri10b,
+  author = {Merino, Mario},
+  title = {{Toberas Magn\'{e}ticas para Motores Espaciales de Plasma}},
+  school = {Universidad Polit\'{e}cnica de Madrid},
+  year = {2010},
+  type = {MSc Thesis}
+}
+
+@PHDTHESIS{ahed88a,
+  author = ea,
+  title = {Absorcion de resonancia y presi{\'o}n de radiaci{\'o}n en plasmas
+	producidos por luz l{\'a}ser},
+  year = {1988},
+  publisher = {Universidad Polit{\'e}cnica de Madrid}
+}
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% --------------------------- PATENTS SECTION -------------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+@misc{meri13e,
+ author = mm # and # ea,
+ title = {Sistema sin partes m\'oviles ni electrodos y procedimiento para vectorizar el empuje en motores espaciales de plasma},
+ year = {2013},
+ number = {ES2540167},
+ type = {patent},
+ version = {},
+ note = {Spanish Patent Office, Patent no. ES2540167}
+} 
+
+@misc{meri18d,
+ author = mm,
+ title = {Motor espacial de plasma sin electrodos con geometr\'ia en {U}},
+ year = {2019},
+ number = {ES2733773},
+ type = {patent},
+ version = {},
+ note = {PCT patent, Spanish Patent Office, Patent no. ES2733773}
+} 
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ------------------ BOOKS/BOOK CHAPTERS SECTION ----------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+@incollection{bomb12,
+  author = cb # and # hu # and # mm # and # ea # and # jp,  
+  editor = {James V. McAdams and David P. McKinley and Matthew M. Berry and Keith L. Jenkins},
+  title = {Relative Dynamics and Control of an Ion Beam Shepherd Satellite},    
+  series = {Advances in the Astronautical Sciences},
+  booktitle = {Spaceflight mechanics 2012},
+  volume = {143},
+  publisher = {Univelt},
+  ISBN = {9780877035817},
+  year = {2012},
+  pages = {2145--2158}
+}
+
+% bomb12: Conference number: (AAS 12-246) (it was a conference paper, published as a bookchapter later on)
+
+@INCOLLECTION{ahed13a,
+  author = {Eduardo Ahedo},
+  title = {Plasma Dynamics in a Helicon Thruster},
+  booktitle = {Progress in Propulsion Physics},
+  publisher = {Torus Press},
+  year = {2013},
+  editor = {Luigi T. DeLuca and Christophe Bonnal and Oskar J. Haidn and Sergey
+	M. Frolov},
+  volume = {IV},
+  series = {EUCASS Advances in Aerospace Sciences},
+  chapter = {3},
+  pages = {337--354},
+  isbn = {978-2-7598-0876-2}
+}
+
+@INCOLLECTION{meri13b,
+  author = mm_ea # and # cb # and # hu # and # jp,
+  title = {Ion Beam Shepherd satellite for Space Debris Removal},
+  booktitle = {Progress in Propulsion Physics},
+  year = {2013},
+  editor = {Luigi T. DeLuca and Christophe Bonnal and Oskar J. Haidn and Sergey
+	M. Frolov},
+  volume = {IV},
+  series = {EUCASS Advances in Aerospace Sciences},
+  chapter = {8},
+  pages = {789--802},
+  publisher = {EDP Sciences, Les Ulis, France},
+  doi = {10.1051/eucass/201304789},
+  isbn = {978-2-7598-0876-2},
+  timestamp = {2014.01.13}
+}
+
+@incollection{meri16g,
+  author = mm # and # ea,
+  editor = {J. Leon Shohet},
+  title = {Magnetic Nozzles for Space Plasma Thrusters},
+  booktitle = {Encyclopedia of Plasma Technology},
+  volume = {2},
+  publisher = {Taylor and Francis},
+  pages = {1329--1351},
+  year = {2016},
+  ISBN = {9781466500594},
+} 
+
+@MISC{meri11h,
+  author = {Merino, M.},
+  title = {{2D} plasma flow in a magnetic nozzle with a bi-modal Electron Energy
+	Distribution Function},
+  year = {2011}
+}
+
+@INPROCEEDINGS{meri10bPO,
+  address = {Belgrade, Serbia},
+  author = {M. Merino and E. Ahedo},
+  booktitle = {20th European Conference on the Atomic and Molecular Physics of Ionized Gases},
+  publisher = {Belgrade Institute of Physics},
+  title = {{2D} plasma flow in Magnetic Nozzles for Propulsion and Processing applications},
+  year = {2010},
+  comment = { I won the price to the best student poster },
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri10cPO,
+  author = mm_ea,
+  title = {Detachment mechanisms in a magnetic nozzle for plasma propulsion},
+  booktitle = {63rd Gaseous Electronics Conference and 7th International Conference on Reactive Plasmas},
+  year = {2010},
+  number = {DTP-085},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri10fPO,
+  address = {Madrid, Spain},
+  author = mm # and # {I. Mart\'{i}nez} # and # jn # and # ea,
+  booktitle = {5th Spanish Space Student Congress},
+  publisher = {Laboratorio para Experimentaci\'on en Espacio y Microgravedad},
+  title = {Toberas Magn\'eticas: un elemento propulsor de futuros motores de plasma},
+  year = {2010},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{nava12cPO,
+  author = jn # and # mm # and # ea,
+  title = {Plasma Structure Inside and Outside a Helicon Thruster},
+  booktitle = {39th IEEE International Conference on Plasma Science},
+  year = {2012}
+}
+
+@INPROCEEDINGS{meri12dPO,
+  author = mm_ea,
+  title = {Advanced Plasma Propulsion with Magnetic Nozzles: Plasma detachment},
+  booktitle = {63th International Astronautical Congress},
+  year = {2012},
+ publisher = {International Astronautical Federation},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri13d,
+  author = mm,
+  booktitle = icpig31,
+  title = {Key Processes in Plasma Acceleration and Detachment in a Magnetic Nozzle for Advanced Plasma Thrusters},
+  year = {2013},
+  comment = {Granada antes de la Tesis}
+}
+
+@INPROCEEDINGS{cich16aPO,
+  author = fc # and # adv # and # dp # and # mm # and # ea # and # pf,
+  booktitle = sctc14,
+  title = {Hybrid particle codes for electric propulsion},
+  year = {2016},
+  comment = {Filippo. The original title was Simulation of Electric Thruster Plumes and
+Spacecraft Interaction with Hybrid Particle Codes}
+}
+
+@INPROCEEDINGS{meri16cPO,
+  author = mm # and # pf # and # jn # and # xc # and # yb # and # ea,
+  booktitle = spc16,
+  title = {Characteristics and capabilities of the new {EP2} plasma propulsion laboratory},
+  year = {2016},
+  comment = {Roma}
+}
+
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% --------------------------- CODES SECTION ---------------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+@misc{fumagno,
+  author = mm, 
+  title = {{FUMAGNO} code: Fully-magnetized Magnetic Nozzle simulator (under registration)},
+  doi = {10.5281/zenodo.593787}
+}
+ 
+@misc{dimagno,
+  author = mm, 
+  title = {{DIMAGNO} code: {Divergent Magnetic Nozzle} plasma flow solver},
+  doi = {10.5281/zenodo.1257295}
+}
+
+@misc{akiles2d,
+  author = mm # and # jm, 
+  title = {{AKILES} code: {Advanced Kinetic Iterative pLasma Expansion Solver 2D} (under registration)},
+  doi = {10.5281/zenodo.1098432}
+}
+
+@misc{anakin,
+  author = mm, 
+  title = {{ANAKIN} code: {Aerospace eNgineer's Assistant for Kinematics, Inertia and dyNamics}},
+  doi = {10.5281/zenodo.2533336}
+}
+
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ----------------------- OTHER CONTRIBUTIONS -------------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+@TechReport{ECOMODIS22a,
+  author = {Guaita M. and Merino M. and Ahedo E. and Fajardo P.},
+  title  = {Literature Review on Electron Models for Plasma Plumes},
+  year   = {2022},
+  institution = {Universidad Carlos III de Madrid},
+  type   = {Technical Note},
+  note   = {ECOMODIS TN-01}
+}
+
+@TechReport{ECOMODIS23a,
+  author = {Guaita M. and Merino M. and Ahedo E. and Fajardo P.},
+  title  = {Facility Effects on Ground Measurements},
+  year   = {2023},
+  institution = {Universidad Carlos III de Madrid},
+  type   = {Technical Note},
+  note   = {ECOMODIS TN-04}
+}
+
+@TechReport{ECOMODIS23b,
+  author = {Guaita M. and Merino M. and Ahedo E. and Fajardo P.},
+  title  = {Model Description},
+  year   = {2023},
+  institution = {Universidad Carlos III de Madrid},
+  type   = {Technical Note},
+  note   = {ECOMODIS TN-02}
+}
+
+@TechReport{MODEX16,
+  author = mm # and # ea # and # pf,
+  title  = {State-of-the-art on plume and erosion and electron cooling data},
+  year   = {2016},
+  institution = {Universidad Carlos III de Madrid and Airbus Defence \& space},
+  type   = {Technical Note},
+  note   = {TN1 MODEX}
+}
+
+@TechReport{svil_tr19a,
+  author = asv # and # mm # and # ea,
+  title  = {{SURFET} {C}ode {R}eport},
+  year   = {2020},
+  institution = {Universidad Carlos III de Madrid},
+  note ={D3.3. MINOTOR H2020 Project}
+}
+@TechReport{svil_tr20a,
+  author = asv # and # mm # and # jz # and # ea,
+  title  = {Study of alternative propellants},
+  year   = {2020},
+  institution = {Universidad Carlos III de Madrid},
+  note ={D5.1. MINOTOR H2020 Project}
+}
+@TechReport{svil_tr20b,
+  author = asv # and # mm # and # ea,
+  title  = {Scale-up},
+  year   = {2020},
+  institution = {Universidad Carlos III de Madrid},
+  note ={D6.1. MINOTOR H2020 Project}
+}
+
+
+@INPROCEEDINGS{bomb11dPP,
+  author = cb # and # hu # and # jp # and # mm # and # ea # and # {Leopold Summerer},
+  title = {Space Debris Removal with an Ion-Beam Shepherd Satellite: Dynamics and Control},
+  booktitle = {62th International Astronautical Congress},
+  publisher = {International Astronautical Federation},
+  year = {2011},
+  number = {IAC-11.A6.5.9},
+  address = {Cape Town}
+}
+
+@TechReport{meri10,
+  author = {Merino, M. and Mart{\'i}nez, I. and Navarro, J. and Ahedo, E.},
+  title  = {La tobera magn{\'e}tica: un elemento central de futuros motores de plasma},
+  year   = {2010},
+}
+
+@TECHREPORT{meri10c,
+  author = {Merino, M. and Ahedo, E.},
+  title = {{2D} plasma flow in magnetic nozzles for propulsion and processing
+	applications},
+  year = {2010}
+}
+
+@TECHREPORT{meri10d,
+  author = {Merino, M. and Bombardelli, C. and Ahedo, E. and Pel{\'a}ez, J. and
+	Urrutxua, H.},
+  title = {La basura espacial: una estrategia de eliminaci{\'o}n activa mediante
+	propulsi{\'o}n el{\'e}ctrica inversa y tethers electrodin{\'a}micos},
+  year = {2010}
+}
+
+@INPROCEEDINGS{meri10dPP,
+  author = mm,
+  booktitle = {Aerospace Testing 2010},
+  publisher = {Aerospace Testing},
+  title = {Magnetic Nozzles for Plasma Space Propulsion},
+  year = {2010},
+  comment = {presentation of my MSc thesis, awarded with YAEY (Young Aerospace Engineer of the Year) prize},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri10e,
+  author = mm,
+  booktitle = {9th Certamen Universitario Arqu\'{i}medes de Introducci\'{o}n a la Investigaci\'{o}n Cient\'{i}fica},
+  publisher = {Government of Spain},
+  title = {Toberas magn\'{e}ticas para motores espaciales de plasma},
+  year = {2011},
+  timestamp = {2014.01.13},
+  comment = {I won the second prize of the Engineering and Architecture category}
+}
+
+@TECHREPORT{meri10f,
+  author = {Merino, M.},
+  title = {Toberas magn{\'e}ticas para motores espaciales de plasma},
+  year = {2010},
+  address = {available at http://web.fmetsia.upm.es/ep2/},
+  publisher = {Universidad Polit{\'e}cnica de Madrid}
+}
+
+@INPROCEEDINGS{meri10gPP,
+  author = mm,
+  booktitle = {5th Spanish Space Student Congress},
+  publisher = {Laboratorio para Experimentaci{\'o}n en Espacio y Microgravedad},
+  title = {La basura espacial: una estrategia de eliminaci{\'o}n activa mediante
+  propulsi{\'o}n el{\'e}ctrica inversa y tethers electrodin{\'a}micos},
+  address = {Madrid, Spain},
+  timestamp = {2014.01.13},
+  year = {2010}
+}
+
+@INPROCEEDINGS{meri11f,
+  author = mm_ea,
+  title = {Toberas magn\'eticas en futuros motores espaciales de plasma},
+  booktitle = {XXXIII Reuni\'on Bienal de la RSEF},
+  year = {2011},
+  publisher = {Real Sociedad Espa\~nola de F\'isica},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri12cPP,
+  author = mm,
+  title = {New electric propulsion technologies investigation by simulation},
+  booktitle = {18th SPINE Meeting and Workshop},
+  year = {2012},
+  publisher = {SPIS/SPINE Community, ESA},
+  comment = {La conferencia de SPIS en ESTEC, en marzo de 2012},
+  timestamp = {2014.01.13}
+}
+
+@INPROCEEDINGS{meri14d,
+  author = mm,
+  booktitle = {EPIC Workshop, Brussels},
+  title = {{NOMADS} and {EP2PLUS}: advanced hybrid codes for Hall thrusters, plasma plumes, and {S/C} interaction},
+  year = {2014}, 
+}
+
+@INPROCEEDINGS{meri14e,
+  author = mm,
+  booktitle = {EPIC Workshop, Brussels},
+  title = {{2D DIMAGNO} and {HELWAVE2} simulators for Magnetic Nozzles and Helicon Antenna Sources},
+  year = {2014}, 
+}
+
+@INPROCEEDINGS{meri14f,
+  author = mm,
+  booktitle = {EPIC Workshop, Brussels},
+  title = {Non-mechanic thrust pointing system with steerable magnetic nozzle},
+  year = {2014}, 
+}
+
+@INPROCEEDINGS{meri16d,
+  author = mm # and # ea # and # pf,
+  title = {Development of physical models of electron cooling in collisionless plasma thruster plumes},
+  booktitle = {22$^{nd}$ SPINE Meeting and Workshop},
+  publisher = {SPIS/SPINE Community, ESA},
+  year = {2016}
+}
+
+@INPROCEEDINGS{meri17a,
+  author = mm # and # ea,
+  title = {Modeling magnetized plasma jets in electric propulsion},
+  booktitle = {International Workshop on Ion Propulsion and accelerator industrial applications},
+  year = {2017},  
+  number = {IPAIA-2017-24},
+  address = {CNR Bari, Italy},
+  publisher = {CNR}
+}
+
+@INPROCEEDINGS{meri17e,
+  author = mm,
+  title = {Magnetic nozzles for electric propulsion},
+  booktitle = {EPIC lecture series},
+  year = {2017},  
+  address = {Madrid, Spain},
+  publisher = {SRC EPIC}
+}
+
+@INPROCEEDINGS{meri18b,
+  author = mm # and # jn # and # fc # and # adv # and # mw # and # pf # and # ea,
+  title = {Micro-Propulsion plasma plume measurement and simulation},
+  booktitle = {2$^{nd}$ International Conference on Micropropulsion and CubeSats},
+  year = {2018},  
+  address = {Singapore}
+}
+
+@INPROCEEDINGS{meri18f,
+  author = mm # and # ea # and # jn # and # pf # and # gs,
+  title = {Magnetic nozzles},
+  booktitle = {EPIC workshop},
+  year = {2018},  
+  address = {London, UK}
+}
+  
+@INPROCEEDINGS{meri18g,
+  author = mm # and # fc # and # ea # and # {Juan Manuel Catal\'{a}n} # and # adv # and # pf,
+  title = {Electron modeling in hybrid plasma thruster plume simulations},
+  booktitle = {25$^{th}$ SPINE Meeting and Workshop},
+  publisher = {SPIS/SPINE Community, ESA},
+  year = {2018},
+  address = {Noordwijk, Netherlands}
+}
+                     
+@INPROCEEDINGS{alpa15,
+  author = {A. Alpatov and } # fc # { and  A. Fokov and S. Khoroshylov and } # mm #  { and A. Zakrzhevskii},
+  title = {Calculation of the Impact from plume of ion thruster to orbital debris},
+  booktitle = {5th International Conference on Space Technologies: Present and Future},
+  year = {2015},
+  address = {Dnepropetrovsk, Ukraine}
+}
+
+@INPROCEEDINGS{alpa15b,
+  author = {A. Alpatov and } # fc # { and  A. Fokov and S. Khoroshylov and } # mm #  { and A. Zakrzhevskii},
+  title = {Algorithm for determination of force transmitted by plume of ion thruster to orbital object using photo camera},
+  booktitle = {66th International Astronautical Congress},
+  publisher = {International Astronautical Federation},
+  year = {2015},
+  number = {IAC-15,A6,5,5,x27732},
+  address = {Jerusalem, Israel}
+}
+
+@INPROCEEDINGS{domi16v,
+  author = adv # and # fc # and # dp # and # mm # and # pf # and # ea,
+  title = {Hybrid PIC-fluid simulation of plasma thrusters and their plumes},
+  booktitle = {VKI Lecture Series: Electric Propulsion Systems: from recent research developments to industrial space applications},
+  year = {2016}, 
+  number = {STO-AVT-263},
+  address = {Von Karman Institute, Belgium},
+  publisher = {Von Karman Institute},
+  comment = {Was only a presentation}
+}
+
+@INPROCEEDINGS{cich18c,
+  author = fc # and # mm # and # ea # and # {Juan Manuel Catal\'{a}n} # and # adv,
+  title = {Application of {EP2PLUS} {3D} code to plasma thruster plumes and discharges},
+  booktitle = {EPIC workshop},
+  year = {2018},  
+  address = {London, UK}
+}
+
+@INPROCEEDINGS{ahed03g,
+  author = {Parra, F. and Ahedo, E.},
+  title = {Study of a {Hall} thruster discharge with an intermediate electrode},
+  booktitle = {Proc. 39th Joint Propulsion Conference, Huntsville, AL},
+  year = {2003},
+  series = {AIAA 2003-4703},
+  publisher = AIAA
+}
+
+@INPROCEEDINGS{ahed04e,
+  author = {Parra, F.I. and Ahedo, E.},
+  title = {Fulfillment of the Bohm condition on the HP{Hall} fluid-PIC code},
+  booktitle = {Proc. 40th Joint Propulsion Conference, Fort Lauderdale, FL},
+  year = {2004},
+  series = {AIAA 2004-3955},
+  publisher = AIAA
+}
+
+@MISC{ahed85a,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R.},
+  title = {Absorption of p-polarized light in a s-polarized laser},
+  year = {1985}
+}
+
+@MISC{ahed85b,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R.},
+  title = {Absorption of p-polarized light in a plasma produced by a s-polarized
+	laser},
+  year = {1985}
+}
+
+@MISC{ahed87b,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R.},
+  title = {Resonance absorption with self-consistent profile modification},
+  year = {1987}
+}
+
+@MISC{ahed88b,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R.},
+  title = {Self-consistent profile modification and resonance absorption},
+  year = {1988}
+}
+
+@MISC{ahed91a,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E. and Conde, L. and Iba{\~n}ez, F.
+	and Alcatel-France},
+  title = {New Electrodynamic Tether Technology(NETT)},
+  year = {1991}
+}
+
+@MISC{ahed91b,
+  author = {Ahedo, E. and Sanmart{\'i}n, J.R.},
+  title = {Self-consistent plasma profile steepening in presence of arbitrarily
+	polarized laser light},
+  year = {1991}
+}
+
+@MISC{ahed98b,
+  author = {Mart{\'i}nez-S{\'a}nchez, M. and Ahedo, E.},
+  title = {One-dimensional flow structure in {Hall} thrusters},
+  year = {1998}
+}
+
+@MISC{ahed99c,
+  author = {Sanmart{\'i}n, J.R. and Ahedo, E. and Conde, L. and Pel{\'a}ez, J.
+	and Ruiz, M.},
+  title = {Short electrodynamic tethers},
+  year = {1999}
+}
+
+@MISC{ahed01g,
+  author = {Ahedo, E. and Mart{\'i}nez-Cerezo, P. and Gallardo, J.M.},
+  title = {One-dimensional analysis of {Hall} thruster operating modes},
+  year = {2001}
+}
+
+@MISC{ahed01j,
+  author = {Ahedo, E. and Mart{\'i}nez-Cerezo, P. and Gallardo, J.M.},
+  title = {Modeling the plasma discharge in a {Hall} thruster},
+  year = {2001}
+}
+
+@MISC{ahed02m,
+  author = {Ahedo, E. and Gallardo, J.M. and Parra, F.I.},
+  title = {Analysis of the plasma response in a {Hall} thruster},
+  year = {2002}
+}
+
+@MISC{ahed03i,
+  author = {Ahedo, E. and Lapuerta, V. and Escobar, D. and Molina, A. and Parra,
+	F.I. and P{\'e}rez-Trigo, C. and Rus, J.},
+  title = {Physics of the {Hall} thruster discharge},
+  year = {2003}
+}
+
+@MISC{ahed03j,
+  author = {Ahedo, E. and Parra, F.I.},
+  title = {Development of numerical models for double stage {Hall} thrusters},
+  year = {2003}
+}
+
+@MISC{ahed04f,
+  author = {Ahedo, E.},
+  title = {Physics and modelling of the {Hall} thruster discharge},
+  year = {2004}
+}
+
+@MISC{ahed05a,
+  author = {Ahedo, E. and Parra, F.I. and Escobar, D. and Lapuerta, V. and Molina,
+	A. and Rus, J.},
+  title = {Numerical modeling of the {Hall} thruster discharge},
+  year = {2005}
+}
+
+@MISC{ahed05e,
+  author = {Parra, F.I. and Ahedo, E.},
+  title = {Improvement of the plasma-wall interaction model on a hybrid fluid-PIC simulation of a {Hall} thruster},
+  year = {2005}
+}
+
+@MISC{ahed07e,
+  author = {Ahedo, E. and Escobar, D.},
+  title = {Two-dimensional modelling of the {Hall} thruster discharge},
+  year = {2005}
+}
+
+@TECHREPORT{ahed10l,
+  author = {Ahedo, E. and Pavarin, D.},
+  title = {HPH.COM: designing a new member of the electric propulsion family},
+  year = {2010}
+}
+
+@TECHREPORT{ahed11u,
+  author = {Bombardelli, C. and Pel{\'a}ez, J. and Ahedo, E. and Urrutxua, H.
+	and Merino, M.},
+  title = {The ion beam shepherd, a new concept for asteroid deflection},
+  year = {2011}
+}
+
+@INPROCEEDINGS{ahed18a,
+  author = adv # and # dp # and # asv # and # bt # and # jz # and # pf # and # mm # and # ea,
+  title = {{HYPHEN}, a multi-thruster simulation platform},
+  booktitle = {EPIC workshop},
+  year = {2018},  
+  address = {London, UK}
+}
+
+
+@INPROCEEDINGS{mode21b,
+  author = amd,
+  booktitle = {IEEE International Conference on Plasma Science (ICOPS), Virtual},
+  title = {Comparison between Magnetized Plasma Plume Solutions obtained with Staggered and Collocated 3D Cartesian Grid Schemes},
+  year = {2021}, 
+}
+
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ------------------ SIMULATION DATASETS SECTION ----------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+@dataset{sim_data_madd22a,
+  author       = {Davide Maddaloni and
+                  Adrián Dom\'inguez Vázquez and
+                  Filippo Terragni and
+                  Mario Merino},
+  title        = {{Data from: Data-driven analysis of oscillations in 
+                   Hall thruster simulations}},
+  month        = mar,
+  year         = 2022,
+  publisher    = {Zenodo},
+  version      = {1.0.4},
+  doi          = {10.5281/zenodo.6390700},
+  url          = {https://doi.org/10.5281/zenodo.6390700}
+}
+
+@dataset{sim_data_jime23a,
+  author       = {Pedro Jimenez},
+  title        = {{Data from: Analysis of a cusped helicon plasma 
+                   thruster discharge}},
+  month        = feb,
+  year         = 2024,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.10641401},
+  url          = {https://doi.org/10.5281/zenodo.10641401}
+}
+
+@dataset{sim_data_meri21a,
+  author       = {Mario Merino and
+                  Judit Nuez and
+                  Eduardo Ahedo},
+  title        = {{Data from: Fluid-kinetic model of a propulsive magnetic nozzle}},
+  month        = oct,
+  year         = 2021,
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.5557592},
+}
+
+@data{sim_data_cich21a,
+author = {Cichocki, F.},
+publisher = {e-cienciaDatos},
+title = "{3D Simulation of a Hall-effect thruster near plume with a side cathode}",
+year = {2021},
+version = {V1},
+doi = {10.21950/BWFPPX},
+howpublished={\url{https://doi.org/10.21950/BWFPPX}}
+}
+
+@data{sim_data_cich21b,
+author = {Cichocki, F.},
+publisher = {e-cienciaDatos},
+title = "{3D simulation of a Hall-effect thuster near plume with a lateral boundary cathode}",
+year = {2021},
+version = {V1},
+doi = {10.21950/QXBASE},
+howpublished={\url{https://doi.org/10.21950/QXBASE}}
+}
+
+@data{sim_data_cich21c,
+author = {Cichocki, F.},
+publisher = {e-cienciaDatos},
+title = "{3D simulation of a Hall-effect thuster near plume with a central cathode}",
+year = {2021},
+version = {V1},
+doi = {10.21950/H7WO81},
+howpublished={\url{https://doi.org/10.21950/H7WO81}}
+}
+
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ------------------  TECH REPORT SECTION ----------------------
+% ---------------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+@techreport{barq21c,
+    author = { Barquero S.},
+    title = {Pulsed Plasma Thruster Design},
+    institution = {NANOSTAR Student Challenges - Report, NANOSTAR consortium - Interreg Sudoe Programme through the European Regional Development Fund (ERDF)},
+    year = {2021}
+}
+
+@techreport{barq23d,
+    author = { Barquero S.},
+    title = {Informe de modelado, simulación, requisitos y diseño preliminar de sistema de micropropulsión PPT (M18)},
+    institution = {Millimeter wave Array at Room Temperature for INstruments in LEO Altitude Radio Astronomy (MARTINLARA) Project Report - Objective 4.1, Co-funded by the Consejería de Ciencia, Universidades e Innovación of the Comunidad de Madrid and the European Union},
+    year = {2023}
+}
+
+@techreport{barq23e,
+    author = {S. Barquero, A. Cabello López},
+    title = {Informe de preparación de micro balanza de empuje y puesta a punto de laboratorio (M24)},
+    institution = {Millimeter wave Array at Room Temperature for INstruments in LEO Altitude Radio Astronomy (MARTINLARA) Project Report - Objective 4.2, Co-funded by the Consejería de Ciencia, Universidades e Innovación of the Comunidad de Madrid and the European Union},
+    year = {2023}
+}
+
+@techreport{barq23f,
+    author = { Barquero S.},
+    title = {Informe de ensayo y experimentación con prototipos PTT (M42)},
+    institution = {Millimeter wave Array at Room Temperature for INstruments in LEO Altitude Radio Astronomy (MARTINLARA) Project Report - Objective 4.3, Co-funded by the Consejería de Ciencia, Universidades e Innovación of the Comunidad de Madrid and the European Union},
+    year = {2023}
+}
+
+@techreport{barq23g,
+    author = { Barquero S.},
+    title = {Informe de desarrollo de modelo de ingeniería de sistema de micropropulsión PPT (M48)},
+    institution = {Millimeter wave Array at Room Temperature for INstruments in LEO Altitude Radio Astronomy (MARTINLARA) Project Report - Objective 4.4, Co-funded by the Consejería de Ciencia, Universidades e Innovación of the Comunidad de Madrid and the European Union},
+    year = {2023}
+}
+
+@bachelorsthesis{cabe20,
+    author = {Cabello López, A.},
+    title = {Design and Development of a micro-PPT Thrust Balance},
+    school = {Bachelor's thesis, Universidad Carlos III de Madrid. Advisors:  M. Merino and S. Barquero.},
+    year = {2020}
+}
+
+ %GitHub
+
+@Article{barq24d,     
+Title = {TIME-SERIES ToF (Time-of-Flight) tool
+for exhaust reconstruction in unsteady electric propulsion},
+Author = {S. Barquero, J. Navarro-Cavallé and M. Merino},
+Journal = {GitHub repository},
+   Url                     = {*****},
+  Year                     = {2024}
+
+} % Related to the Journal Paper in barq24a
+
+
+@Article{barq24e,
+Title = {WAVES (Wire Array for Variable Exhaust
+Scanning) tool for time-varying reconstruction of the the plume cross section in unsteady electric
+propulsion},
+Author = {S. Barquero, J. Navarro-Cavallé and M. Merino},
+Journal = {GitHub repository},
+   Url                     = {*****},
+  Year                     = {2024}
+} % Related to the Journal Paper in barq24c
